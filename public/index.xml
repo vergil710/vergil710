@@ -7,6 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Sun, 04 Sep 2022 21:25:55 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Test1</title>
+        <link>https://example.com/test1/</link>
+        <pubDate>Mon, 05 Sep 2022 13:51:25 +0800</pubDate>
+        
+        <guid>https://example.com/test1/</guid>
+        <description>&lt;p&gt;法发是否都是&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>测试</title>
         <link>https://example.com/p/%E6%B5%8B%E8%AF%95/</link>
         <pubDate>Sun, 04 Sep 2022 21:25:55 +0800</pubDate>
