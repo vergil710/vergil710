@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>研究记录 on Vergil 的研究札记</title>
+        <link>https://vergil710.github.io/vergil710/tags/%E7%A0%94%E7%A9%B6%E8%AE%B0%E5%BD%95/</link>
+        <description>Recent content in 研究记录 on Vergil 的研究札记</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Mon, 01 Jun 2026 09:00:00 +0800</lastBuildDate><atom:link href="https://vergil710.github.io/vergil710/tags/%E7%A0%94%E7%A9%B6%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>这个博客准备记录什么</title>
+            <link>https://vergil710.github.io/vergil710/p/hello-research-blog/</link>
+            <pubDate>Mon, 01 Jun 2026 09:00:00 +0800</pubDate>
+            <guid>https://vergil710.github.io/vergil710/p/hello-research-blog/</guid>
+            <description>&lt;p&gt;这个博客会作为我的长期研究记录。&lt;/p&gt;&#xA;&lt;p&gt;它不是朋友圈式的即时更新，也不是只放最终成果的展示页。更准确地说，它会是一套可以回头查、可以继续迭代、可以服务论文和工程实践的公开笔记。&lt;/p&gt;&#xA;&lt;h2 id=&#34;我想留下什么&#34;&gt;我想留下什么&#xA;&lt;/h2&gt;&lt;p&gt;研究中有很多内容，如果不及时整理，很容易散落在聊天记录、临时文档、代码注释和脑子里：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;一篇论文真正有价值的假设和边界；&lt;/li&gt;&#xA;&lt;li&gt;一个控制问题为什么这样建模；&lt;/li&gt;&#xA;&lt;li&gt;一个实验指标为什么足以支撑结论；&lt;/li&gt;&#xA;&lt;li&gt;一个算法在工程平台上为什么跑不动；&lt;/li&gt;&#xA;&lt;li&gt;一个研究想法从模糊兴趣变成论文问题的过程。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这些东西看起来零碎，但它们共同构成研究能力。&lt;/p&gt;&#xA;&lt;h2 id=&#34;主要方向&#34;&gt;主要方向&#xA;&lt;/h2&gt;&lt;p&gt;接下来我会重点写几类内容：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;重载列车控制与 ATO 速度曲线规划；&lt;/li&gt;&#xA;&lt;li&gt;MPC、CBF、鲁棒控制、安全强化学习等控制方法；&lt;/li&gt;&#xA;&lt;li&gt;Neural Operator / DeepONet 在控制建模中的可能用法；&lt;/li&gt;&#xA;&lt;li&gt;论文选题、文献地图、实验设计和审稿回复；&lt;/li&gt;&#xA;&lt;li&gt;AI 辅助科研工作流和个人知识库建设。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;写作原则&#34;&gt;写作原则&#xA;&lt;/h2&gt;&lt;p&gt;我希望这里的文章尽量满足三个要求：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;具体：少写空泛感想，多写问题、变量、假设、指标和例子；&lt;/li&gt;&#xA;&lt;li&gt;可复核：区分事实、推测、个人判断和待验证事项；&lt;/li&gt;&#xA;&lt;li&gt;可复用：让未来的自己可以直接拿来继续写论文、做实验或组织项目。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这是第一篇，先把地基打下来。&lt;/p&gt;&#xA;</description>
+        </item></channel>
+</rss>

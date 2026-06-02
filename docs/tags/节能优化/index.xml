@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>节能优化 on Vergil 的研究札记</title>
+        <link>https://vergil710.github.io/vergil710/tags/%E8%8A%82%E8%83%BD%E4%BC%98%E5%8C%96/</link>
+        <description>Recent content in 节能优化 on Vergil 的研究札记</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Mon, 01 Jun 2026 09:00:00 +0800</lastBuildDate><atom:link href="https://vergil710.github.io/vergil710/tags/%E8%8A%82%E8%83%BD%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>ATO 节能准时速度曲线规划：问题拆解</title>
+            <link>https://vergil710.github.io/vergil710/p/ato-energy-punctuality-notes/</link>
+            <pubDate>Mon, 01 Jun 2026 09:00:00 +0800</pubDate>
+            <guid>https://vergil710.github.io/vergil710/p/ato-energy-punctuality-notes/</guid>
+            <description>&lt;p&gt;ATO 节能准时速度曲线规划看似是“给一条速度曲线”，实际上同时牵涉多个目标：准时、安全、节能、舒适度和实时计算。&lt;/p&gt;&#xA;&lt;p&gt;如果把问题写得太粗，很容易变成一句话：“在约束下优化能耗”。但真正做算法时，需要把目标、约束和工程运行场景拆清楚。&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-基本目标&#34;&gt;1. 基本目标&#xA;&lt;/h2&gt;&lt;p&gt;一个简化的目标可以写成：&lt;/p&gt;&#xA;&lt;p&gt;\[&#xA;\min J = E(u, v, s) + \lambda_t |T_{arrive} - T_{plan}| + \lambda_c C(j)&#xA;\]&lt;/p&gt;&#xA;&lt;p&gt;其中：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;\(E\) 表示牵引能耗；&lt;/li&gt;&#xA;&lt;li&gt;\(T_{arrive}\) 是实际到达时间；&lt;/li&gt;&#xA;&lt;li&gt;\(T_{plan}\) 是计划到达时间；&lt;/li&gt;&#xA;&lt;li&gt;\(C(j)\) 与冲击率或舒适度相关；&lt;/li&gt;&#xA;&lt;li&gt;\(u, v, s\) 分别表示控制量、速度和位置。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这个式子只是入口。真实系统中，准点性往往不是软约束，而可能是优先级更高的硬要求。&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-关键约束&#34;&gt;2. 关键约束&#xA;&lt;/h2&gt;&lt;p&gt;速度曲线规划至少要考虑：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;线路限速；&lt;/li&gt;&#xA;&lt;li&gt;牵引/制动能力；&lt;/li&gt;&#xA;&lt;li&gt;坡度和曲线等线路条件；&lt;/li&gt;&#xA;&lt;li&gt;分相区通过规则；&lt;/li&gt;&#xA;&lt;li&gt;临时限速和移动授权变化；&lt;/li&gt;&#xA;&lt;li&gt;牵引制动施加、切除和缓解延时；&lt;/li&gt;&#xA;&lt;li&gt;舒适度指标；&lt;/li&gt;&#xA;&lt;li&gt;单周期计算时间上限。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;其中最容易被低估的是实时性。一个离线最优的速度曲线，如果不能在车载平台规定时间内算出来，就很难成为可用方案。&lt;/p&gt;&#xA;&lt;h2 id=&#34;3-准时和节能的优先级&#34;&gt;3. 准时和节能的优先级&#xA;&lt;/h2&gt;&lt;p&gt;在运营计划有效、站间线路数据具备时，算法通常应先保证准点性，再在可操作空间内优化能耗。&lt;/p&gt;&#xA;&lt;p&gt;这意味着算法不是始终追求能耗最低，而是在不同场景下切换策略：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;时间充裕：节能优先，可以增加惰行和经济速度区间；&lt;/li&gt;&#xA;&lt;li&gt;时间紧张：效率优先，先保证运行计划；&lt;/li&gt;&#xA;&lt;li&gt;计划变化：触发在线重规划；&lt;/li&gt;&#xA;&lt;li&gt;实际曲线偏离较大：重新生成可跟踪曲线。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;4-后续要继续追问的问题&#34;&gt;4. 后续要继续追问的问题&#xA;&lt;/h2&gt;&lt;p&gt;这类问题后续可以继续拆成几条研究线：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;如何估计重规划耗时，并根据耗时动态调整求解精度；&lt;/li&gt;&#xA;&lt;li&gt;如何把参数在线识别结果反馈给曲线规划；&lt;/li&gt;&#xA;&lt;li&gt;如何用 CBF 或安全滤波保证学习型控制器输出满足约束；&lt;/li&gt;&#xA;&lt;li&gt;如何设计指标证明节能、准点和舒适度之间的综合改进。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这篇只是问题拆解，后续可以逐步展开模型、算法和实验设计。&lt;/p&gt;&#xA;</description>
+        </item></channel>
+</rss>

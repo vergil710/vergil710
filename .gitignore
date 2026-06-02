@@ -1,0 +1,5 @@
+.DS_Store
+.hugo_build.lock
+tools/
+hugo_pkg/
+hugo_extract/
