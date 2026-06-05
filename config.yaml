@@ -1,4 +1,5 @@
 baseurl: https://vergil710.github.io/vergil710/
+languageCode: zh-cn
 locale: zh-cn
 theme: hugo-theme-stack
 paginate: 8
@@ -33,7 +34,10 @@ params:
     sidebar:
         emoji:
         subtitle: 重载列车控制、智能优化、科研写作与个人知识管理。
-        avatar: img/avatar.png
+        avatar:
+            enabled: true
+            local: true
+            src: img/avatar.png
 
     article:
         math: true
