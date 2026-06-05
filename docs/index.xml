@@ -1,4 +1,288 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>首页 on Vergil 的研究札记</title><link>https://vergil710.github.io/vergil710/</link><description>Recent content in 首页 on Vergil 的研究札记</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 01 Jun 2026 09:00:00 +0800</lastBuildDate><atom:link href="https://vergil710.github.io/vergil710/index.xml" rel="self" type="application/rss+xml"/><item><title>ATO 节能准时速度曲线规划：问题拆解</title><link>https://vergil710.github.io/vergil710/p/ato-energy-punctuality-notes/</link><pubDate>Mon, 01 Jun 2026 09:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/ato-energy-punctuality-notes/</guid><description>&lt;p>ATO 节能准时速度曲线规划看似是“给一条速度曲线”，实际上同时牵涉多个目标：准时、安全、节能、舒适度和实时计算。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>首页 on Vergil 的研究札记</title><link>https://vergil710.github.io/vergil710/</link><description>Recent content in 首页 on Vergil 的研究札记</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 04 Jun 2026 11:00:00 +0800</lastBuildDate><atom:link href="https://vergil710.github.io/vergil710/index.xml" rel="self" type="application/rss+xml"/><item><title>个人知识库不是收藏夹，而是可检索的项目记忆</title><link>https://vergil710.github.io/vergil710/p/knowledge-base-building/</link><pubDate>Thu, 04 Jun 2026 11:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/knowledge-base-building/</guid><description>&lt;p>个人知识库如果只是把文件放进一个目录，很快就会变成收藏夹。真正有用的知识库应该服务具体项目，让信息能被找回、被引用、被更新。&lt;/p>
+&lt;h2 id="1-知识源">1. 知识源&lt;/h2>
+&lt;p>常见知识源包括：&lt;/p>
+&lt;ul>
+&lt;li>论文 PDF；&lt;/li>
+&lt;li>读书笔记；&lt;/li>
+&lt;li>实验日志；&lt;/li>
+&lt;li>代码说明；&lt;/li>
+&lt;li>项目决策记录；&lt;/li>
+&lt;li>长对话摘要；&lt;/li>
+&lt;li>会议记录。&lt;/li>
+&lt;/ul>
+&lt;p>不是所有内容都值得入库。临时想法可以先放草稿，只有长期有用的信息才进入项目记忆。&lt;/p>
+&lt;h2 id="2-文档摘要">2. 文档摘要&lt;/h2>
+&lt;p>摘要不只是缩短原文，而是提取可复用信息：&lt;/p>
+&lt;ul>
+&lt;li>文档目的；&lt;/li>
+&lt;li>关键结论；&lt;/li>
+&lt;li>适用场景；&lt;/li>
+&lt;li>与当前项目的关系；&lt;/li>
+&lt;li>待核验点。&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-文献卡片">3. 文献卡片&lt;/h2>
+&lt;p>一篇论文的卡片应该包括：&lt;/p>
+&lt;ul>
+&lt;li>问题；&lt;/li>
+&lt;li>方法；&lt;/li>
+&lt;li>实验；&lt;/li>
+&lt;li>结论；&lt;/li>
+&lt;li>局限；&lt;/li>
+&lt;li>可借鉴之处；&lt;/li>
+&lt;li>和自己工作的关系。&lt;/li>
+&lt;/ul>
+&lt;h2 id="4-项目记忆">4. 项目记忆&lt;/h2>
+&lt;p>项目记忆要记录“为什么”。比如为什么选这个模型，为什么放弃某个实验，为什么改论文结构。&lt;/p>
+&lt;p>这些信息最容易在几个月后丢失，却往往决定项目能不能继续推进。&lt;/p>
+&lt;p>知识库的目标不是保存一切，而是让重要信息在需要时能重新进入工作流。&lt;/p></description></item><item><title>哲学讨论班：为什么要用多角色讨论</title><link>https://vergil710.github.io/vergil710/p/philosophy-seminar-method/</link><pubDate>Thu, 04 Jun 2026 10:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/philosophy-seminar-method/</guid><description>&lt;p>哲学学习很容易变成两种极端：一种是背概念，一种是写感想。前者没有问题意识，后者容易失去文本依据。&lt;/p>
+&lt;p>多角色讨论的好处，是把一个问题放到不同思想传统中反复照亮。&lt;/p>
+&lt;h2 id="1-先有问题">1. 先有问题&lt;/h2>
+&lt;p>讨论不是从“介绍某某哲学家”开始，而是从问题开始：&lt;/p>
+&lt;ul>
+&lt;li>什么是自由；&lt;/li>
+&lt;li>技术是否改变人的主体性；&lt;/li>
+&lt;li>知识和行动是什么关系；&lt;/li>
+&lt;li>现代性为什么带来焦虑；&lt;/li>
+&lt;li>AI 是否改变我们对理解的定义。&lt;/li>
+&lt;/ul>
+&lt;p>问题越清楚，角色越有用。&lt;/p>
+&lt;h2 id="2-角色不是人设">2. 角色不是人设&lt;/h2>
+&lt;p>哲学角色不能只是口号化人格。比如“尼采很激烈”“康德很理性”都太粗。&lt;/p>
+&lt;p>更好的方式是让角色携带：&lt;/p>
+&lt;ul>
+&lt;li>核心问题意识；&lt;/li>
+&lt;li>关键概念；&lt;/li>
+&lt;li>论证方式；&lt;/li>
+&lt;li>与其他思想家的分歧；&lt;/li>
+&lt;li>可能的局限。&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-区分原典和解释">3. 区分原典和解释&lt;/h2>
+&lt;p>讨论时要明确哪些是原典观点，哪些是解释性转述，哪些是个人启发。&lt;/p>
+&lt;p>这能避免把哲学家变成随手可用的观点素材。&lt;/p>
+&lt;h2 id="4-回到现实">4. 回到现实&lt;/h2>
+&lt;p>哲学讨论最后应该回到现实处境，但不是变成鸡汤。它应该帮助我们更清楚地描述自己的困境、选择和责任。&lt;/p>
+&lt;p>这也是我希望保留哲学讨论班的原因：它不直接解决技术问题，却能训练问题意识。&lt;/p></description></item><item><title>实验复现日志应该记录什么</title><link>https://vergil710.github.io/vergil710/p/code-reproduction-log/</link><pubDate>Thu, 04 Jun 2026 09:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/code-reproduction-log/</guid><description>&lt;p>实验跑通一次不等于复现成功。真正的复现应该让未来的自己或别人能够重新得到同样的结果，至少知道差异来自哪里。&lt;/p>
+&lt;h2 id="1-环境">1. 环境&lt;/h2>
+&lt;p>记录环境不是形式主义。至少包括：&lt;/p>
+&lt;ul>
+&lt;li>操作系统；&lt;/li>
+&lt;li>Python / MATLAB / C++ 版本；&lt;/li>
+&lt;li>关键依赖版本；&lt;/li>
+&lt;li>CPU / GPU / 板端型号；&lt;/li>
+&lt;li>数据文件版本；&lt;/li>
+&lt;li>随机种子。&lt;/li>
+&lt;/ul>
+&lt;p>如果实验涉及嵌入式平台，还要记录交叉编译工具链、系统架构和运行权限。&lt;/p>
+&lt;h2 id="2-命令">2. 命令&lt;/h2>
+&lt;p>不要只写“运行 main.py”。应该记录完整命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">python run_experiment.py --config configs/ato_energy.yaml --seed &lt;span class="m">42&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果有多个阶段，也要区分数据预处理、训练、测试、绘图。&lt;/p>
+&lt;h2 id="3-输出">3. 输出&lt;/h2>
+&lt;p>输出至少包含：&lt;/p>
+&lt;ul>
+&lt;li>关键指标；&lt;/li>
+&lt;li>图表路径；&lt;/li>
+&lt;li>日志路径；&lt;/li>
+&lt;li>异常信息；&lt;/li>
+&lt;li>运行时间；&lt;/li>
+&lt;li>内存或算力开销。&lt;/li>
+&lt;/ul>
+&lt;h2 id="4-结论">4. 结论&lt;/h2>
+&lt;p>实验日志最后要写判断：&lt;/p>
+&lt;ul>
+&lt;li>是否复现成功；&lt;/li>
+&lt;li>与论文或预期结果是否一致；&lt;/li>
+&lt;li>差异可能来自哪里；&lt;/li>
+&lt;li>下一步需要改什么。&lt;/li>
+&lt;/ul>
+&lt;p>好的实验日志不是流水账，而是给下一次实验留下入口。&lt;/p></description></item><item><title>控制类论文实验设计：指标、对比和消融</title><link>https://vergil710.github.io/vergil710/p/experiment-design-for-control-paper/</link><pubDate>Wed, 03 Jun 2026 10:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/experiment-design-for-control-paper/</guid><description>&lt;p>控制类论文的实验设计不能只问“画哪些图”，而要先问“我的论文主张是什么”。每一个实验都应该服务一个主张。&lt;/p>
+&lt;h2 id="1-指标">1. 指标&lt;/h2>
+&lt;p>如果论文主张是节能准时速度曲线规划，常见指标包括：&lt;/p>
+&lt;ul>
+&lt;li>到站时间误差；&lt;/li>
+&lt;li>总牵引能耗；&lt;/li>
+&lt;li>最大速度约束违反量；&lt;/li>
+&lt;li>舒适度或冲击率；&lt;/li>
+&lt;li>计算时间；&lt;/li>
+&lt;li>曲线跟踪误差。&lt;/li>
+&lt;/ul>
+&lt;p>指标要和问题对应，不能只挑对自己有利的图。&lt;/p>
+&lt;h2 id="2-对比方法">2. 对比方法&lt;/h2>
+&lt;p>对比方法至少应该覆盖：&lt;/p>
+&lt;ul>
+&lt;li>人工驾驶或经验策略；&lt;/li>
+&lt;li>传统优化方法；&lt;/li>
+&lt;li>现有基线控制器；&lt;/li>
+&lt;li>去掉关键模块后的版本。&lt;/li>
+&lt;/ul>
+&lt;p>如果没有合理对比，读者很难判断改进来自方法本身，还是来自场景设置。&lt;/p>
+&lt;h2 id="3-消融实验">3. 消融实验&lt;/h2>
+&lt;p>消融实验回答的是：每个模块到底有没有贡献。&lt;/p>
+&lt;p>例如：&lt;/p>
+&lt;ul>
+&lt;li>去掉在线参数识别；&lt;/li>
+&lt;li>去掉安全约束层；&lt;/li>
+&lt;li>固定规划步长；&lt;/li>
+&lt;li>不考虑分相区；&lt;/li>
+&lt;li>不使用 warm start。&lt;/li>
+&lt;/ul>
+&lt;p>每个消融都应该对应一个设计选择。&lt;/p>
+&lt;h2 id="4-鲁棒性实验">4. 鲁棒性实验&lt;/h2>
+&lt;p>真实系统有扰动和不确定性，所以还要看：&lt;/p>
+&lt;ul>
+&lt;li>坡度误差；&lt;/li>
+&lt;li>牵引制动参数偏差；&lt;/li>
+&lt;li>临时限速变化；&lt;/li>
+&lt;li>计划时间扰动；&lt;/li>
+&lt;li>不同线路和不同车型。&lt;/li>
+&lt;/ul>
+&lt;p>好的实验不是把图画满，而是让读者相信：方法在关键场景里确实支撑了论文主张。&lt;/p></description></item><item><title>文献地图怎么做，才不是简单堆论文</title><link>https://vergil710.github.io/vergil710/p/literature-map-method/</link><pubDate>Wed, 03 Jun 2026 09:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/literature-map-method/</guid><description>&lt;p>文献地图不是把论文题名列成表，也不是把每篇文章都摘要一遍。它的作用是帮助我们回答：已有研究覆盖了什么，遗漏了什么，而我的工作准备站在哪里。&lt;/p>
+&lt;h2 id="1-先按问题分组">1. 先按问题分组&lt;/h2>
+&lt;p>比起按年份罗列，更有用的是按问题分组：&lt;/p>
+&lt;ul>
+&lt;li>速度曲线优化；&lt;/li>
+&lt;li>准时性控制；&lt;/li>
+&lt;li>节能驾驶策略；&lt;/li>
+&lt;li>参数辨识；&lt;/li>
+&lt;li>安全约束；&lt;/li>
+&lt;li>实时求解；&lt;/li>
+&lt;li>工程部署。&lt;/li>
+&lt;/ul>
+&lt;p>每个组里再放代表性论文，这样更容易看出研究脉络。&lt;/p>
+&lt;h2 id="2-每篇文献只抓关键字段">2. 每篇文献只抓关键字段&lt;/h2>
+&lt;p>一张有用的文献表至少应该包含：&lt;/p>
+&lt;ul>
+&lt;li>研究问题；&lt;/li>
+&lt;li>方法；&lt;/li>
+&lt;li>约束条件；&lt;/li>
+&lt;li>实验场景；&lt;/li>
+&lt;li>指标；&lt;/li>
+&lt;li>局限；&lt;/li>
+&lt;li>与本文关系。&lt;/li>
+&lt;/ul>
+&lt;p>最后一列最重要。它逼着你说明：这篇论文对你的工作是背景、对比、延伸，还是要解决的缺口。&lt;/p>
+&lt;h2 id="3-研究空白要具体">3. 研究空白要具体&lt;/h2>
+&lt;p>不够好的空白：&lt;/p>
+&lt;blockquote>
+&lt;p>现有研究考虑不充分。&lt;/p>
+&lt;/blockquote>
+&lt;p>更好的空白：&lt;/p>
+&lt;blockquote>
+&lt;p>现有速度曲线优化研究多关注离线节能效果，但对在线重规划耗时、临时限速变化和参数不确定性下的可部署性讨论不足。&lt;/p>
+&lt;/blockquote>
+&lt;p>空白越具体，创新点越容易落地。&lt;/p>
+&lt;h2 id="4-创新点必须能回扣文献">4. 创新点必须能回扣文献&lt;/h2>
+&lt;p>一个创新点不能只是“我用了新方法”。它应该回答：&lt;/p>
+&lt;ul>
+&lt;li>解决了哪个已有缺口；&lt;/li>
+&lt;li>为什么已有方法做不到；&lt;/li>
+&lt;li>新方法改变了什么；&lt;/li>
+&lt;li>用什么实验或理论证明。&lt;/li>
+&lt;/ul>
+&lt;p>文献地图的终点不是综述段落，而是贡献声明。&lt;/p></description></item><item><title>CBF 安全滤波：把安全约束放在控制输出之前</title><link>https://vergil710.github.io/vergil710/p/cbf-safety-filter-notes/</link><pubDate>Tue, 02 Jun 2026 11:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/cbf-safety-filter-notes/</guid><description>&lt;p>控制屏障函数（Control Barrier Function, CBF）的核心思想是：先定义安全集合，再约束系统状态不要离开这个集合。&lt;/p>
+&lt;p>如果安全集合写成：&lt;/p>
+&lt;p>\[
+\mathcal C = \{x \mid h(x) \ge 0\}
+\]&lt;/p>
+&lt;p>那么 CBF 关心的是如何让系统演化过程中始终满足 \(h(x)\ge 0\)。&lt;/p>
+&lt;h2 id="1-安全集合">1. 安全集合&lt;/h2>
+&lt;p>在列车控制中，安全集合可以和很多工程约束对应：&lt;/p>
+&lt;ul>
+&lt;li>不超过线路限速；&lt;/li>
+&lt;li>不越过移动授权；&lt;/li>
+&lt;li>不进入危险追踪间隔；&lt;/li>
+&lt;li>不违反分相区牵引限制；&lt;/li>
+&lt;li>不输出超出执行器能力的牵引/制动。&lt;/li>
+&lt;/ul>
+&lt;p>关键不是写一个抽象的 \(h(x)\)，而是让它对应真实的安全边界。&lt;/p>
+&lt;h2 id="2-safety-filter">2. Safety filter&lt;/h2>
+&lt;p>如果上层控制器给出一个候选控制量 \(u_{nom}\)，安全滤波器可以通过一个小优化问题修正它：&lt;/p>
+&lt;p>\[
+\min_u \|u-u_{nom}\|^2
+\]&lt;/p>
+&lt;p>subject to CBF 约束和输入约束。&lt;/p>
+&lt;p>这样做的直觉是：尽量尊重原控制器意图，但一旦它可能破坏安全，就把输出拉回安全范围。&lt;/p>
+&lt;h2 id="3-和-rl-的关系">3. 和 RL 的关系&lt;/h2>
+&lt;p>强化学习控制器可能在训练环境中表现很好，但真实系统不能容忍探索式违规。CBF 可以作为 RL 输出之后的一层安全约束。&lt;/p>
+&lt;p>这并不意味着问题完全解决。还要考虑：&lt;/p>
+&lt;ul>
+&lt;li>CBF 约束是否可行；&lt;/li>
+&lt;li>安全集合是否过于保守；&lt;/li>
+&lt;li>模型误差会不会破坏安全证明；&lt;/li>
+&lt;li>离散控制周期下是否仍然安全。&lt;/li>
+&lt;/ul>
+&lt;p>CBF 的价值在于提供了一种把“安全”写进控制律之前的形式化方法，而不是事后靠经验检查。&lt;/p></description></item><item><title>MPC 用在列车控制里，真正难在哪里</title><link>https://vergil710.github.io/vergil710/p/mpc-for-train-control/</link><pubDate>Tue, 02 Jun 2026 10:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/mpc-for-train-control/</guid><description>&lt;p>MPC 的直觉很简单：每一步都向前看一段时间，解一个有限时域优化问题，只执行第一个控制量，然后滚动更新。&lt;/p>
+&lt;p>但把它放到列车控制里，难点不在“会不会写优化问题”，而在模型、约束、实时性和工程可用性。&lt;/p>
+&lt;h2 id="1-预测模型">1. 预测模型&lt;/h2>
+&lt;p>列车纵向动力学可以写成：&lt;/p>
+&lt;p>\[
+m\dot v = F_t(u_t, v) - F_b(u_b, v) - R(v) - mg\sin\theta(s)
+\]&lt;/p>
+&lt;p>这里至少涉及牵引力、制动力、基本阻力、坡度阻力和位置相关线路条件。模型越真实，优化越难；模型越简化，控制效果越可能偏离实际。&lt;/p>
+&lt;h2 id="2-目标函数">2. 目标函数&lt;/h2>
+&lt;p>一个典型目标会同时考虑：&lt;/p>
+&lt;ul>
+&lt;li>到站时间误差；&lt;/li>
+&lt;li>牵引能耗；&lt;/li>
+&lt;li>速度跟踪误差；&lt;/li>
+&lt;li>控制量变化率；&lt;/li>
+&lt;li>舒适度或冲击率。&lt;/li>
+&lt;/ul>
+&lt;p>这些目标之间不一定一致。节能可能倾向惰行，准点可能需要更积极牵引，舒适度又会限制控制变化。&lt;/p>
+&lt;h2 id="3-约束">3. 约束&lt;/h2>
+&lt;p>列车控制中的约束不是装饰项：&lt;/p>
+&lt;ul>
+&lt;li>速度不能超过限速；&lt;/li>
+&lt;li>位置必须满足移动授权；&lt;/li>
+&lt;li>牵引和制动有幅值限制；&lt;/li>
+&lt;li>控制等级可能是离散的；&lt;/li>
+&lt;li>分相区有特殊通过规则；&lt;/li>
+&lt;li>计算时间不能超限。&lt;/li>
+&lt;/ul>
+&lt;p>如果约束不可行，系统还需要有降级策略，而不是简单宣告求解失败。&lt;/p>
+&lt;h2 id="4-实时性">4. 实时性&lt;/h2>
+&lt;p>MPC 在论文里经常默认求解器足够快，但车载平台上的计算资源有限。实际部署时，必须回答：&lt;/p>
+&lt;ul>
+&lt;li>单周期是否能完成求解；&lt;/li>
+&lt;li>求解失败时输出什么；&lt;/li>
+&lt;li>是否可以 warm start；&lt;/li>
+&lt;li>是否可以降低预测步长或减少迭代次数；&lt;/li>
+&lt;li>优化器运行时间如何被监控。&lt;/li>
+&lt;/ul>
+&lt;p>MPC 的价值在于它能自然处理多约束问题；它的风险也在于，真实约束一多，计算复杂度和工程调参会迅速上升。&lt;/p></description></item><item><title>Lyapunov 稳定性证明应该检查什么</title><link>https://vergil710.github.io/vergil710/p/lyapunov-proof-checklist/</link><pubDate>Tue, 02 Jun 2026 09:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/lyapunov-proof-checklist/</guid><description>&lt;p>Lyapunov 稳定性证明看起来像一套固定模板：选一个 \(V(x)\)，证明它正定，再证明 \(\dot V(x)\le 0\) 或 \(\dot V(x)&amp;lt;0\)。但真正写论文或检查推导时，问题往往出在细节。&lt;/p>
+&lt;h2 id="1-平衡点是否说清楚">1. 平衡点是否说清楚&lt;/h2>
+&lt;p>证明稳定性之前，必须先明确系统的平衡点是什么。对于系统&lt;/p>
+&lt;p>\[
+\dot x = f(x)
+\]&lt;/p>
+&lt;p>如果讨论的是原点稳定性，就要确认 \(f(0)=0\)。如果系统经过坐标平移，也要说明新的误差状态如何定义。&lt;/p>
+&lt;h2 id="2-vx-的正定性是否成立">2. \(V(x)\) 的正定性是否成立&lt;/h2>
+&lt;p>常见说法是：&lt;/p>
+&lt;p>\[
+V(0)=0,\quad V(x)&amp;gt;0,\quad x\ne 0
+\]&lt;/p>
+&lt;p>但如果 \(V(x)\) 包含交叉项，就不能只凭直觉说它正定，而要通过矩阵正定性、Schur 补或不等式界定来证明。&lt;/p>
+&lt;h2 id="3-dot-v-的条件够不够强">3. \(\dot V\) 的条件够不够强&lt;/h2>
+&lt;p>如果只能得到 \(\dot V\le 0\)，通常只能说明稳定性，不能直接声称渐近稳定。要得到渐近稳定，可能还需要 LaSalle 不变性原理，或者证明 \(\dot V\) 负定。&lt;/p>
+&lt;h2 id="4-结论边界要克制">4. 结论边界要克制&lt;/h2>
+&lt;p>不同条件对应不同结论：&lt;/p>
+&lt;ul>
+&lt;li>稳定；&lt;/li>
+&lt;li>渐近稳定；&lt;/li>
+&lt;li>指数稳定；&lt;/li>
+&lt;li>一致最终有界；&lt;/li>
+&lt;li>输入到状态稳定。&lt;/li>
+&lt;/ul>
+&lt;p>证明到哪一步，就写到哪一步。不要把“误差不发散”写成“误差收敛到零”。&lt;/p>
+&lt;h2 id="5-工程含义">5. 工程含义&lt;/h2>
+&lt;p>在列车控制问题里，稳定性证明不是为了漂亮，而是为了说明速度误差、位置误差或跟踪误差不会因为扰动和模型误差而失控。证明的每个假设都应该能回到工程条件：限速、牵引制动约束、坡度扰动、通信延迟或执行器延时。&lt;/p></description></item><item><title>ATO 节能准时速度曲线规划：问题拆解</title><link>https://vergil710.github.io/vergil710/p/ato-energy-punctuality-notes/</link><pubDate>Mon, 01 Jun 2026 09:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/ato-energy-punctuality-notes/</guid><description>&lt;p>ATO 节能准时速度曲线规划看似是“给一条速度曲线”，实际上同时牵涉多个目标：准时、安全、节能、舒适度和实时计算。&lt;/p>
 &lt;p>如果把问题写得太粗，很容易变成一句话：“在约束下优化能耗”。但真正做算法时，需要把目标、约束和工程运行场景拆清楚。&lt;/p>
 &lt;h2 id="1-基本目标">1. 基本目标&lt;/h2>
 &lt;p>一个简化的目标可以写成：&lt;/p>
@@ -137,7 +421,43 @@
 &lt;/ul>
 &lt;blockquote>
 &lt;p>这里的姓名、学校/单位、邮箱和个人照片还需要替换成你的真实信息。&lt;/p>
-&lt;/blockquote></description></item><item><title>归档</title><link>https://vergil710.github.io/vergil710/archives/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vergil710.github.io/vergil710/archives/</guid><description/></item><item><title>搜索</title><link>https://vergil710.github.io/vergil710/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vergil710.github.io/vergil710/search/</guid><description/></item><item><title>研究方向</title><link>https://vergil710.github.io/vergil710/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vergil710.github.io/vergil710/research/</guid><description>&lt;p>我的研究兴趣围绕“轨道交通运行控制如何在安全、准时、节能和实时计算之间取得平衡”展开。&lt;/p>
+&lt;/blockquote></description></item><item><title>归档</title><link>https://vergil710.github.io/vergil710/archives/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vergil710.github.io/vergil710/archives/</guid><description/></item><item><title>搜索</title><link>https://vergil710.github.io/vergil710/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vergil710.github.io/vergil710/search/</guid><description/></item><item><title>项目</title><link>https://vergil710.github.io/vergil710/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vergil710.github.io/vergil710/projects/</guid><description>&lt;p>这个页面用于整理我长期维护的几个主题项目。它们不是一次性文章，而是会持续更新的研究线索和工作流。&lt;/p>
+&lt;h2 id="1-控制理论讨论班">1. 控制理论讨论班&lt;/h2>
+&lt;p>目标是围绕重载列车控制方向系统训练控制理论能力。重点包括：&lt;/p>
+&lt;ul>
+&lt;li>非线性系统与 Lyapunov 稳定性；&lt;/li>
+&lt;li>MPC 与优化控制；&lt;/li>
+&lt;li>鲁棒控制与 Tube MPC；&lt;/li>
+&lt;li>CBF 与安全滤波；&lt;/li>
+&lt;li>Safe RL 与学习型控制；&lt;/li>
+&lt;li>DeepONet / Neural Operator；&lt;/li>
+&lt;li>重载列车纵向动力学；&lt;/li>
+&lt;li>嵌入式部署与实时验证。&lt;/li>
+&lt;/ul>
+&lt;h2 id="2-论文写作工厂">2. 论文写作工厂&lt;/h2>
+&lt;p>目标是把论文写作从零散生成变成流程化工程，覆盖：&lt;/p>
+&lt;ul>
+&lt;li>选题与研究问题；&lt;/li>
+&lt;li>文献地图与研究空白；&lt;/li>
+&lt;li>创新点凝练；&lt;/li>
+&lt;li>方法建模与理论推导；&lt;/li>
+&lt;li>仿真实验设计；&lt;/li>
+&lt;li>图表规划；&lt;/li>
+&lt;li>初稿写作；&lt;/li>
+&lt;li>审稿模拟与回复。&lt;/li>
+&lt;/ul>
+&lt;h2 id="3-ai-research-studio">3. AI Research Studio&lt;/h2>
+&lt;p>目标是把 AI 工具变成长期可维护的研究工作室，而不是一次性聊天窗口。&lt;/p>
+&lt;p>核心思路是：&lt;/p>
+&lt;ul>
+&lt;li>按场景组织，而不是按模型组织；&lt;/li>
+&lt;li>任务开始先读项目设定；&lt;/li>
+&lt;li>常见任务沉淀为 Skill；&lt;/li>
+&lt;li>重要修改写入日志；&lt;/li>
+&lt;li>AI 负责辅助推理、写作、代码和组织，最终判断由人完成。&lt;/li>
+&lt;/ul>
+&lt;h2 id="4-哲学讨论班">4. 哲学讨论班&lt;/h2>
+&lt;p>目标是用多角色讨论的方式学习哲学原典、思想史和现实问题。常见主题包括意义、自由、技术、知识、道德、现代性、科学与人文、人工智能与主体性。&lt;/p></description></item><item><title>研究方向</title><link>https://vergil710.github.io/vergil710/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vergil710.github.io/vergil710/research/</guid><description>&lt;p>我的研究兴趣围绕“轨道交通运行控制如何在安全、准时、节能和实时计算之间取得平衡”展开。&lt;/p>
 &lt;h2 id="1-ato-节能准时速度曲线规划">1. ATO 节能准时速度曲线规划&lt;/h2>
 &lt;p>核心问题是：在时刻表、限速、坡度、牵引制动能力和舒适度约束下，如何生成既准时又节能的速度曲线。&lt;/p>
 &lt;p>关注点包括：&lt;/p>

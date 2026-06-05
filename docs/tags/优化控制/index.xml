@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>优化控制 on Vergil 的研究札记</title><link>https://vergil710.github.io/vergil710/tags/%E4%BC%98%E5%8C%96%E6%8E%A7%E5%88%B6/</link><description>Recent content in 优化控制 on Vergil 的研究札记</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 02 Jun 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://vergil710.github.io/vergil710/tags/%E4%BC%98%E5%8C%96%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml"/><item><title>MPC 用在列车控制里，真正难在哪里</title><link>https://vergil710.github.io/vergil710/p/mpc-for-train-control/</link><pubDate>Tue, 02 Jun 2026 10:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/mpc-for-train-control/</guid><description>&lt;p>MPC 的直觉很简单：每一步都向前看一段时间，解一个有限时域优化问题，只执行第一个控制量，然后滚动更新。&lt;/p>
+&lt;p>但把它放到列车控制里，难点不在“会不会写优化问题”，而在模型、约束、实时性和工程可用性。&lt;/p>
+&lt;h2 id="1-预测模型">1. 预测模型&lt;/h2>
+&lt;p>列车纵向动力学可以写成：&lt;/p>
+&lt;p>\[
+m\dot v = F_t(u_t, v) - F_b(u_b, v) - R(v) - mg\sin\theta(s)
+\]&lt;/p>
+&lt;p>这里至少涉及牵引力、制动力、基本阻力、坡度阻力和位置相关线路条件。模型越真实，优化越难；模型越简化，控制效果越可能偏离实际。&lt;/p>
+&lt;h2 id="2-目标函数">2. 目标函数&lt;/h2>
+&lt;p>一个典型目标会同时考虑：&lt;/p>
+&lt;ul>
+&lt;li>到站时间误差；&lt;/li>
+&lt;li>牵引能耗；&lt;/li>
+&lt;li>速度跟踪误差；&lt;/li>
+&lt;li>控制量变化率；&lt;/li>
+&lt;li>舒适度或冲击率。&lt;/li>
+&lt;/ul>
+&lt;p>这些目标之间不一定一致。节能可能倾向惰行，准点可能需要更积极牵引，舒适度又会限制控制变化。&lt;/p>
+&lt;h2 id="3-约束">3. 约束&lt;/h2>
+&lt;p>列车控制中的约束不是装饰项：&lt;/p>
+&lt;ul>
+&lt;li>速度不能超过限速；&lt;/li>
+&lt;li>位置必须满足移动授权；&lt;/li>
+&lt;li>牵引和制动有幅值限制；&lt;/li>
+&lt;li>控制等级可能是离散的；&lt;/li>
+&lt;li>分相区有特殊通过规则；&lt;/li>
+&lt;li>计算时间不能超限。&lt;/li>
+&lt;/ul>
+&lt;p>如果约束不可行，系统还需要有降级策略，而不是简单宣告求解失败。&lt;/p>
+&lt;h2 id="4-实时性">4. 实时性&lt;/h2>
+&lt;p>MPC 在论文里经常默认求解器足够快，但车载平台上的计算资源有限。实际部署时，必须回答：&lt;/p>
+&lt;ul>
+&lt;li>单周期是否能完成求解；&lt;/li>
+&lt;li>求解失败时输出什么；&lt;/li>
+&lt;li>是否可以 warm start；&lt;/li>
+&lt;li>是否可以降低预测步长或减少迭代次数；&lt;/li>
+&lt;li>优化器运行时间如何被监控。&lt;/li>
+&lt;/ul>
+&lt;p>MPC 的价值在于它能自然处理多约束问题；它的风险也在于，真实约束一多，计算复杂度和工程调参会迅速上升。&lt;/p></description></item></channel></rss>

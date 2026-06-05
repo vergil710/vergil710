@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>科研工作流 on Vergil 的研究札记</title><link>https://vergil710.github.io/vergil710/tags/%E7%A7%91%E7%A0%94%E5%B7%A5%E4%BD%9C%E6%B5%81/</link><description>Recent content in 科研工作流 on Vergil 的研究札记</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 01 Jun 2026 09:00:00 +0800</lastBuildDate><atom:link href="https://vergil710.github.io/vergil710/tags/%E7%A7%91%E7%A0%94%E5%B7%A5%E4%BD%9C%E6%B5%81/index.xml" rel="self" type="application/rss+xml"/><item><title>把 AI 用成研究工作室，而不是零散聊天</title><link>https://vergil710.github.io/vergil710/p/ai-research-studio-workflow/</link><pubDate>Mon, 01 Jun 2026 09:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/ai-research-studio-workflow/</guid><description>&lt;p>我越来越觉得，AI 辅助科研的关键不是“问一个很聪明的问题”，而是把 AI 放进稳定的工作流里。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>科研工作流 on Vergil 的研究札记</title><link>https://vergil710.github.io/vergil710/tags/%E7%A7%91%E7%A0%94%E5%B7%A5%E4%BD%9C%E6%B5%81/</link><description>Recent content in 科研工作流 on Vergil 的研究札记</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 04 Jun 2026 09:00:00 +0800</lastBuildDate><atom:link href="https://vergil710.github.io/vergil710/tags/%E7%A7%91%E7%A0%94%E5%B7%A5%E4%BD%9C%E6%B5%81/index.xml" rel="self" type="application/rss+xml"/><item><title>实验复现日志应该记录什么</title><link>https://vergil710.github.io/vergil710/p/code-reproduction-log/</link><pubDate>Thu, 04 Jun 2026 09:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/code-reproduction-log/</guid><description>&lt;p>实验跑通一次不等于复现成功。真正的复现应该让未来的自己或别人能够重新得到同样的结果，至少知道差异来自哪里。&lt;/p>
+&lt;h2 id="1-环境">1. 环境&lt;/h2>
+&lt;p>记录环境不是形式主义。至少包括：&lt;/p>
+&lt;ul>
+&lt;li>操作系统；&lt;/li>
+&lt;li>Python / MATLAB / C++ 版本；&lt;/li>
+&lt;li>关键依赖版本；&lt;/li>
+&lt;li>CPU / GPU / 板端型号；&lt;/li>
+&lt;li>数据文件版本；&lt;/li>
+&lt;li>随机种子。&lt;/li>
+&lt;/ul>
+&lt;p>如果实验涉及嵌入式平台，还要记录交叉编译工具链、系统架构和运行权限。&lt;/p>
+&lt;h2 id="2-命令">2. 命令&lt;/h2>
+&lt;p>不要只写“运行 main.py”。应该记录完整命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">python run_experiment.py --config configs/ato_energy.yaml --seed &lt;span class="m">42&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果有多个阶段，也要区分数据预处理、训练、测试、绘图。&lt;/p>
+&lt;h2 id="3-输出">3. 输出&lt;/h2>
+&lt;p>输出至少包含：&lt;/p>
+&lt;ul>
+&lt;li>关键指标；&lt;/li>
+&lt;li>图表路径；&lt;/li>
+&lt;li>日志路径；&lt;/li>
+&lt;li>异常信息；&lt;/li>
+&lt;li>运行时间；&lt;/li>
+&lt;li>内存或算力开销。&lt;/li>
+&lt;/ul>
+&lt;h2 id="4-结论">4. 结论&lt;/h2>
+&lt;p>实验日志最后要写判断：&lt;/p>
+&lt;ul>
+&lt;li>是否复现成功；&lt;/li>
+&lt;li>与论文或预期结果是否一致；&lt;/li>
+&lt;li>差异可能来自哪里；&lt;/li>
+&lt;li>下一步需要改什么。&lt;/li>
+&lt;/ul>
+&lt;p>好的实验日志不是流水账，而是给下一次实验留下入口。&lt;/p></description></item><item><title>把 AI 用成研究工作室，而不是零散聊天</title><link>https://vergil710.github.io/vergil710/p/ai-research-studio-workflow/</link><pubDate>Mon, 01 Jun 2026 09:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/ai-research-studio-workflow/</guid><description>&lt;p>我越来越觉得，AI 辅助科研的关键不是“问一个很聪明的问题”，而是把 AI 放进稳定的工作流里。&lt;/p>
 &lt;p>零散聊天当然有用，但它很难积累。真正有长期价值的是：每次讨论、每次推导、每次代码修改、每次文献阅读，都能沉淀到一个项目结构里。&lt;/p>
 &lt;h2 id="1-按场景组织而不是按模型组织">1. 按场景组织，而不是按模型组织&lt;/h2>
 &lt;p>不同模型擅长的事情不一样，但研究任务本身更应该按场景组织：&lt;/p>

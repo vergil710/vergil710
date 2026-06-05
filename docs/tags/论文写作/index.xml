@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>论文写作 on Vergil 的研究札记</title><link>https://vergil710.github.io/vergil710/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/</link><description>Recent content in 论文写作 on Vergil 的研究札记</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 03 Jun 2026 10:00:00 +0800</lastBuildDate><atom:link href="https://vergil710.github.io/vergil710/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>控制类论文实验设计：指标、对比和消融</title><link>https://vergil710.github.io/vergil710/p/experiment-design-for-control-paper/</link><pubDate>Wed, 03 Jun 2026 10:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/experiment-design-for-control-paper/</guid><description>&lt;p>控制类论文的实验设计不能只问“画哪些图”，而要先问“我的论文主张是什么”。每一个实验都应该服务一个主张。&lt;/p>
+&lt;h2 id="1-指标">1. 指标&lt;/h2>
+&lt;p>如果论文主张是节能准时速度曲线规划，常见指标包括：&lt;/p>
+&lt;ul>
+&lt;li>到站时间误差；&lt;/li>
+&lt;li>总牵引能耗；&lt;/li>
+&lt;li>最大速度约束违反量；&lt;/li>
+&lt;li>舒适度或冲击率；&lt;/li>
+&lt;li>计算时间；&lt;/li>
+&lt;li>曲线跟踪误差。&lt;/li>
+&lt;/ul>
+&lt;p>指标要和问题对应，不能只挑对自己有利的图。&lt;/p>
+&lt;h2 id="2-对比方法">2. 对比方法&lt;/h2>
+&lt;p>对比方法至少应该覆盖：&lt;/p>
+&lt;ul>
+&lt;li>人工驾驶或经验策略；&lt;/li>
+&lt;li>传统优化方法；&lt;/li>
+&lt;li>现有基线控制器；&lt;/li>
+&lt;li>去掉关键模块后的版本。&lt;/li>
+&lt;/ul>
+&lt;p>如果没有合理对比，读者很难判断改进来自方法本身，还是来自场景设置。&lt;/p>
+&lt;h2 id="3-消融实验">3. 消融实验&lt;/h2>
+&lt;p>消融实验回答的是：每个模块到底有没有贡献。&lt;/p>
+&lt;p>例如：&lt;/p>
+&lt;ul>
+&lt;li>去掉在线参数识别；&lt;/li>
+&lt;li>去掉安全约束层；&lt;/li>
+&lt;li>固定规划步长；&lt;/li>
+&lt;li>不考虑分相区；&lt;/li>
+&lt;li>不使用 warm start。&lt;/li>
+&lt;/ul>
+&lt;p>每个消融都应该对应一个设计选择。&lt;/p>
+&lt;h2 id="4-鲁棒性实验">4. 鲁棒性实验&lt;/h2>
+&lt;p>真实系统有扰动和不确定性，所以还要看：&lt;/p>
+&lt;ul>
+&lt;li>坡度误差；&lt;/li>
+&lt;li>牵引制动参数偏差；&lt;/li>
+&lt;li>临时限速变化；&lt;/li>
+&lt;li>计划时间扰动；&lt;/li>
+&lt;li>不同线路和不同车型。&lt;/li>
+&lt;/ul>
+&lt;p>好的实验不是把图画满，而是让读者相信：方法在关键场景里确实支撑了论文主张。&lt;/p></description></item><item><title>文献地图怎么做，才不是简单堆论文</title><link>https://vergil710.github.io/vergil710/p/literature-map-method/</link><pubDate>Wed, 03 Jun 2026 09:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/literature-map-method/</guid><description>&lt;p>文献地图不是把论文题名列成表，也不是把每篇文章都摘要一遍。它的作用是帮助我们回答：已有研究覆盖了什么，遗漏了什么，而我的工作准备站在哪里。&lt;/p>
+&lt;h2 id="1-先按问题分组">1. 先按问题分组&lt;/h2>
+&lt;p>比起按年份罗列，更有用的是按问题分组：&lt;/p>
+&lt;ul>
+&lt;li>速度曲线优化；&lt;/li>
+&lt;li>准时性控制；&lt;/li>
+&lt;li>节能驾驶策略；&lt;/li>
+&lt;li>参数辨识；&lt;/li>
+&lt;li>安全约束；&lt;/li>
+&lt;li>实时求解；&lt;/li>
+&lt;li>工程部署。&lt;/li>
+&lt;/ul>
+&lt;p>每个组里再放代表性论文，这样更容易看出研究脉络。&lt;/p>
+&lt;h2 id="2-每篇文献只抓关键字段">2. 每篇文献只抓关键字段&lt;/h2>
+&lt;p>一张有用的文献表至少应该包含：&lt;/p>
+&lt;ul>
+&lt;li>研究问题；&lt;/li>
+&lt;li>方法；&lt;/li>
+&lt;li>约束条件；&lt;/li>
+&lt;li>实验场景；&lt;/li>
+&lt;li>指标；&lt;/li>
+&lt;li>局限；&lt;/li>
+&lt;li>与本文关系。&lt;/li>
+&lt;/ul>
+&lt;p>最后一列最重要。它逼着你说明：这篇论文对你的工作是背景、对比、延伸，还是要解决的缺口。&lt;/p>
+&lt;h2 id="3-研究空白要具体">3. 研究空白要具体&lt;/h2>
+&lt;p>不够好的空白：&lt;/p>
+&lt;blockquote>
+&lt;p>现有研究考虑不充分。&lt;/p>
+&lt;/blockquote>
+&lt;p>更好的空白：&lt;/p>
+&lt;blockquote>
+&lt;p>现有速度曲线优化研究多关注离线节能效果，但对在线重规划耗时、临时限速变化和参数不确定性下的可部署性讨论不足。&lt;/p>
+&lt;/blockquote>
+&lt;p>空白越具体，创新点越容易落地。&lt;/p>
+&lt;h2 id="4-创新点必须能回扣文献">4. 创新点必须能回扣文献&lt;/h2>
+&lt;p>一个创新点不能只是“我用了新方法”。它应该回答：&lt;/p>
+&lt;ul>
+&lt;li>解决了哪个已有缺口；&lt;/li>
+&lt;li>为什么已有方法做不到；&lt;/li>
+&lt;li>新方法改变了什么；&lt;/li>
+&lt;li>用什么实验或理论证明。&lt;/li>
+&lt;/ul>
+&lt;p>文献地图的终点不是综述段落，而是贡献声明。&lt;/p></description></item></channel></rss>
