@@ -16,7 +16,7 @@
 
 ## 本地预览
 
-需要先安装 Hugo extended，并初始化主题 submodule。
+需要先安装 Hugo extended，并初始化主题 submodule。当前主题版本建议使用 Hugo extended `0.102.3`。
 
 ```bash
 git submodule update --init --recursive

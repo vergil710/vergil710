@@ -31,7 +31,7 @@ jobs:
       - name: Install Hugo extended
         run: |
           set -euo pipefail
-          curl -L -o /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.162.1/hugo_extended_0.162.1_linux-amd64.tar.gz
+          curl -L -o /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.102.3/hugo_extended_0.102.3_Linux-64bit.tar.gz
           tar -xzf /tmp/hugo.tar.gz -C /tmp hugo
           sudo mv /tmp/hugo /usr/local/bin/hugo
           hugo version
