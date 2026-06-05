@@ -1,0 +1,53 @@
+name: Build blog
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "config.yaml"
+      - "content/**"
+      - "assets/**"
+      - "static/**"
+      - "themes/**"
+      - ".gitmodules"
+      - ".github/workflows/build-blog.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install Hugo extended
+        run: |
+          set -euo pipefail
+          curl -L -o /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.162.1/hugo_extended_0.162.1_linux-amd64.tar.gz
+          tar -xzf /tmp/hugo.tar.gz -C /tmp hugo
+          sudo mv /tmp/hugo /usr/local/bin/hugo
+          hugo version
+
+      - name: Build site into docs
+        run: hugo --minify --cleanDestinationDir -d docs
+
+      - name: Commit generated site
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- docs; then
+            echo "No generated site changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          git commit -m "Build blog [skip ci]"
+          git push
