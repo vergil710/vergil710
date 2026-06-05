@@ -1,15 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>写作 on Vergil 的研究札记</title>
-        <link>https://vergil710.github.io/vergil710/tags/%E5%86%99%E4%BD%9C/</link>
-        <description>Recent content in 写作 on Vergil 的研究札记</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Mon, 01 Jun 2026 09:00:00 +0800</lastBuildDate><atom:link href="https://vergil710.github.io/vergil710/tags/%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" /><item>
-            <title>把 AI 用成研究工作室，而不是零散聊天</title>
-            <link>https://vergil710.github.io/vergil710/p/ai-research-studio-workflow/</link>
-            <pubDate>Mon, 01 Jun 2026 09:00:00 +0800</pubDate>
-            <guid>https://vergil710.github.io/vergil710/p/ai-research-studio-workflow/</guid>
-            <description>&lt;p&gt;我越来越觉得，AI 辅助科研的关键不是“问一个很聪明的问题”，而是把 AI 放进稳定的工作流里。&lt;/p&gt;&#xA;&lt;p&gt;零散聊天当然有用，但它很难积累。真正有长期价值的是：每次讨论、每次推导、每次代码修改、每次文献阅读，都能沉淀到一个项目结构里。&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-按场景组织而不是按模型组织&#34;&gt;1. 按场景组织，而不是按模型组织&#xA;&lt;/h2&gt;&lt;p&gt;不同模型擅长的事情不一样，但研究任务本身更应该按场景组织：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;控制理论讨论班；&lt;/li&gt;&#xA;&lt;li&gt;论文写作工厂；&lt;/li&gt;&#xA;&lt;li&gt;代码与仿真实验；&lt;/li&gt;&#xA;&lt;li&gt;文献卡片和知识库；&lt;/li&gt;&#xA;&lt;li&gt;哲学/方法论讨论。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;模型只是工具，场景才是长期记忆的容器。&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-一个任务只设一个主模型&#34;&gt;2. 一个任务只设一个主模型&#xA;&lt;/h2&gt;&lt;p&gt;多模型协作很容易变成意见堆叠。更合理的方式是：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;一个任务只设一个主模型；&lt;/li&gt;&#xA;&lt;li&gt;其他模型只做复核、批评或补充；&lt;/li&gt;&#xA;&lt;li&gt;重要结论必须回到文献、实验或人工判断。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这样可以减少互相打架的建议，也更容易追踪责任边界。&lt;/p&gt;&#xA;&lt;h2 id=&#34;3-skill-化&#34;&gt;3. Skill 化&#xA;&lt;/h2&gt;&lt;p&gt;好用的 prompt 不应该只停留在聊天记录里。它可以被整理成 Skill：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;输入是什么；&lt;/li&gt;&#xA;&lt;li&gt;输出是什么；&lt;/li&gt;&#xA;&lt;li&gt;必须遵守哪些约束；&lt;/li&gt;&#xA;&lt;li&gt;需要人工确认哪些点；&lt;/li&gt;&#xA;&lt;li&gt;结束后应该更新哪些文件。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;当一个任务被 Skill 化，它就从“临时技巧”变成了“可复用流程”。&lt;/p&gt;&#xA;&lt;h2 id=&#34;4-日志化&#34;&gt;4. 日志化&#xA;&lt;/h2&gt;&lt;p&gt;科研最怕的是过一段时间之后忘记当时为什么这么做。&lt;/p&gt;&#xA;&lt;p&gt;所以重要任务结束后，至少要留下三类记录：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;改了什么；&lt;/li&gt;&#xA;&lt;li&gt;为什么改；&lt;/li&gt;&#xA;&lt;li&gt;还有什么没完成。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这比一次性追求完美更重要。长期项目不是靠记忆维持的，而是靠结构和记录维持的。&lt;/p&gt;&#xA;</description>
-        </item></channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>写作 on Vergil 的研究札记</title><link>https://vergil710.github.io/vergil710/tags/%E5%86%99%E4%BD%9C/</link><description>Recent content in 写作 on Vergil 的研究札记</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 01 Jun 2026 09:00:00 +0800</lastBuildDate><atom:link href="https://vergil710.github.io/vergil710/tags/%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>把 AI 用成研究工作室，而不是零散聊天</title><link>https://vergil710.github.io/vergil710/p/ai-research-studio-workflow/</link><pubDate>Mon, 01 Jun 2026 09:00:00 +0800</pubDate><guid>https://vergil710.github.io/vergil710/p/ai-research-studio-workflow/</guid><description>&lt;p>我越来越觉得，AI 辅助科研的关键不是“问一个很聪明的问题”，而是把 AI 放进稳定的工作流里。&lt;/p>
+&lt;p>零散聊天当然有用，但它很难积累。真正有长期价值的是：每次讨论、每次推导、每次代码修改、每次文献阅读，都能沉淀到一个项目结构里。&lt;/p>
+&lt;h2 id="1-按场景组织而不是按模型组织">1. 按场景组织，而不是按模型组织&lt;/h2>
+&lt;p>不同模型擅长的事情不一样，但研究任务本身更应该按场景组织：&lt;/p>
+&lt;ul>
+&lt;li>控制理论讨论班；&lt;/li>
+&lt;li>论文写作工厂；&lt;/li>
+&lt;li>代码与仿真实验；&lt;/li>
+&lt;li>文献卡片和知识库；&lt;/li>
+&lt;li>哲学/方法论讨论。&lt;/li>
+&lt;/ul>
+&lt;p>模型只是工具，场景才是长期记忆的容器。&lt;/p>
+&lt;h2 id="2-一个任务只设一个主模型">2. 一个任务只设一个主模型&lt;/h2>
+&lt;p>多模型协作很容易变成意见堆叠。更合理的方式是：&lt;/p>
+&lt;ul>
+&lt;li>一个任务只设一个主模型；&lt;/li>
+&lt;li>其他模型只做复核、批评或补充；&lt;/li>
+&lt;li>重要结论必须回到文献、实验或人工判断。&lt;/li>
+&lt;/ul>
+&lt;p>这样可以减少互相打架的建议，也更容易追踪责任边界。&lt;/p>
+&lt;h2 id="3-skill-化">3. Skill 化&lt;/h2>
+&lt;p>好用的 prompt 不应该只停留在聊天记录里。它可以被整理成 Skill：&lt;/p>
+&lt;ul>
+&lt;li>输入是什么；&lt;/li>
+&lt;li>输出是什么；&lt;/li>
+&lt;li>必须遵守哪些约束；&lt;/li>
+&lt;li>需要人工确认哪些点；&lt;/li>
+&lt;li>结束后应该更新哪些文件。&lt;/li>
+&lt;/ul>
+&lt;p>当一个任务被 Skill 化，它就从“临时技巧”变成了“可复用流程”。&lt;/p>
+&lt;h2 id="4-日志化">4. 日志化&lt;/h2>
+&lt;p>科研最怕的是过一段时间之后忘记当时为什么这么做。&lt;/p>
+&lt;p>所以重要任务结束后，至少要留下三类记录：&lt;/p>
+&lt;ul>
+&lt;li>改了什么；&lt;/li>
+&lt;li>为什么改；&lt;/li>
+&lt;li>还有什么没完成。&lt;/li>
+&lt;/ul>
+&lt;p>这比一次性追求完美更重要。长期项目不是靠记忆维持的，而是靠结构和记录维持的。&lt;/p></description></item></channel></rss>
