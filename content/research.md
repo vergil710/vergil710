@@ -2,12 +2,6 @@
 title: "研究方向"
 description: "我目前关注的问题、方法和长期主题。"
 slug: "research"
-menu:
-    main:
-        name: 研究
-        weight: 30
-        params:
-            icon: hash
 ---
 
 我的研究兴趣围绕“轨道交通运行控制如何在安全、准时、节能和实时计算之间取得平衡”展开。

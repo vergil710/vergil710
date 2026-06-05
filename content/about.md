@@ -2,12 +2,6 @@
 title: "关于我"
 description: "个人简介、研究兴趣和联系方式。"
 slug: "about"
-menu:
-    main:
-        name: 关于
-        weight: 20
-        params:
-            icon: user
 ---
 
 你好，我是 Vergil。
@@ -38,4 +32,3 @@ menu:
 - Email: `your-email@example.com`
 
 > 这里的姓名、学校/单位、邮箱和个人照片还需要替换成你的真实信息。
-
