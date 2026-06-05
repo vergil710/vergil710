@@ -121,17 +121,24 @@ menu:
           params:
               icon: hash
 
+        - identifier: projects
+          name: 项目
+          url: /projects/
+          weight: 35
+          params:
+              icon: categories
+
         - identifier: archives
           name: 归档
           url: /archives/
-          weight: 40
+          weight: 50
           params:
               icon: archives
 
         - identifier: search
           name: 搜索
           url: /search/
-          weight: 50
+          weight: 60
           params:
               icon: search
 
