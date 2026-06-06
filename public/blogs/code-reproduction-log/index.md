@@ -18,7 +18,7 @@
 不要只写“运行 main.py”。应该记录完整命令：
 
 ```bash
-python run_experiment.py --config configs/ato_energy.yaml --seed 42
+python run_experiment.py --config configs/paper04_event_triggered.yaml --seed 42
 ```
 
 如果有多个阶段，也要区分数据预处理、训练、测试、绘图。
@@ -44,4 +44,3 @@ python run_experiment.py --config configs/ato_energy.yaml --seed 42
 - 下一步需要改什么。
 
 好的实验日志不是流水账，而是给下一次实验留下入口。
-

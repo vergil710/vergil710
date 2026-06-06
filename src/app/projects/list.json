@@ -1,21 +1,49 @@
 [
 	{
-		"name": "AI Research Studio",
+		"name": "论文写作工厂 / Thesis",
 		"year": 2026,
-		"description": "把 AI 辅助科研整理成可复用工作室：多模型讨论、文献卡片、论文写作、代码复现与项目记忆。",
+		"description": "六篇重载列车安全容错控制论文的写作、内审、修订、双语增强与实验复现路线图。当前正文链已完成，重点转向真实可复现实验闭环与投稿级整理。",
 		"image": "/images/project/03c08b1832f36f02.png",
-		"url": "https://github.com/vergil710/AI_Research_Studio",
-		"github": "https://github.com/vergil710/AI_Research_Studio",
+		"url": "https://github.com/vergil710/Thesis",
+		"github": "https://github.com/vergil710/Thesis",
 		"tags": [
-			"AI",
-			"科研工作流",
-			"知识库"
+			"论文写作",
+			"FTC",
+			"双语增强",
+			"实验复现"
 		]
 	},
 	{
-		"name": "个人博客",
+		"name": "AI 人设 / AI Research Studio",
 		"year": 2026,
-		"description": "用于记录重载列车控制、优化方法、论文写作、代码复现和长期项目日志的个人站点。",
+		"description": "保存 AI 辅助科研的角色卡、规则、workflow、prompt 模板和技能注册表，用来约束 OpenClaw、Claude、Codex 等工具的协作方式。",
+		"image": "/images/avatar.png",
+		"url": "https://github.com/vergil710/AI_Research_Studio",
+		"github": "https://github.com/vergil710/AI_Research_Studio",
+		"tags": [
+			"AI 人设",
+			"Workflow",
+			"Skills",
+			"Prompt"
+		]
+	},
+	{
+		"name": "任务清单 / Research Task Board",
+		"year": 2026,
+		"description": "把论文复现、AI 工作室整理和博客同步拆成可执行清单。ATO 暂不进入当前主展示，因为它属于另一条项目线。",
+		"image": "/images/blockies.svg",
+		"url": "/tasks",
+		"github": "https://github.com/vergil710/vergil710",
+		"tags": [
+			"任务清单",
+			"Roadmap",
+			"GitHub Pages"
+		]
+	},
+	{
+		"name": "个人博客 / Vergil710",
+		"year": 2026,
+		"description": "基于 2025 Next 博客模板改造的个人研究站点，用于发布模块入口、论文写作记录、AI 工作流和长期项目日志。",
 		"image": "/images/avatar.png",
 		"url": "https://vergil710.github.io/vergil710/",
 		"github": "https://github.com/vergil710/vergil710",
@@ -23,18 +51,6 @@
 			"Blog",
 			"Next.js",
 			"GitHub Pages"
-		]
-	},
-	{
-		"name": "列车控制研究笔记",
-		"year": 2026,
-		"description": "围绕 ATO 准点停车、MPC、CBF、安全约束与稳定性证明整理的研究笔记集合。",
-		"image": "/images/blockies.svg",
-		"url": "/blog",
-		"tags": [
-			"控制理论",
-			"MPC",
-			"CBF"
 		]
 	}
 ]

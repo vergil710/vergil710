@@ -27,8 +27,17 @@ public/blogs/your-post-slug/
 
 - 关于页：`src/app/about/list.json`
 - 项目页：`src/app/projects/list.json`
+- 任务清单页：`src/app/tasks/page.tsx`
+- 资源入口：`src/app/share/list.json`
 - 首页站点标题、颜色、社交链接：`src/config/site-content.json`
 - 首页卡片组件：`src/app/(home)/`
+
+## 当前内容结构
+
+- 论文写作工厂：同步 `vergil710/Thesis`，主要记录六篇论文的正文链、评审修订、双语增强和实验复现路线图。
+- AI 人设工作室：同步 `vergil710/AI_Research_Studio`，主要记录角色卡、规则、workflow、prompt 模板和 skills registry。
+- 任务清单：在 `/tasks` 页面维护论文复现、AI 工作室整理和博客同步的下一步。
+- ATO 项目：暂不放入当前博客主展示，它属于另一条项目线。
 
 ## 网页内编辑
 

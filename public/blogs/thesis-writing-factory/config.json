@@ -1,0 +1,14 @@
+{
+	"slug": "thesis-writing-factory",
+	"title": "论文写作工厂：Thesis 仓库同步说明",
+	"tags": [
+		"论文写作",
+		"Thesis",
+		"实验复现"
+	],
+	"date": "2026-06-06T16:20",
+	"summary": "六篇论文从正文交付转向实验复现和投稿整理的当前状态。",
+	"cover": "",
+	"hidden": false,
+	"category": "论文写作"
+}

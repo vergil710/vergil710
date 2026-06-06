@@ -1,36 +1,48 @@
 [
 	{
-		"name": "AI Research Studio",
-		"url": "https://github.com/vergil710/AI_Research_Studio",
-		"logo": "https://github.githubassets.com/favicons/favicon.svg",
-		"description": "个人 AI 科研工作室仓库，承载文献阅读、论文写作、实验复现和项目记忆。",
+		"name": "Thesis",
+		"logo": "/images/project/03c08b1832f36f02.png",
+		"url": "https://github.com/vergil710/Thesis",
+		"description": "六篇重载列车安全容错控制论文的正文、评审、修订、双语增强和实验复现路线图。",
 		"tags": [
-			"AI",
-			"科研",
-			"GitHub"
+			"论文写作",
+			"实验复现",
+			"私有仓库"
 		],
 		"stars": 5
 	},
 	{
+		"name": "AI Research Studio",
+		"logo": "/images/avatar.png",
+		"url": "https://github.com/vergil710/AI_Research_Studio",
+		"description": "AI 研究工作室配置库，保存角色卡、规则、workflow、prompt 模板和 skills registry。",
+		"tags": [
+			"AI 人设",
+			"Workflow",
+			"私有仓库"
+		],
+		"stars": 5
+	},
+	{
+		"name": "任务清单",
+		"logo": "/images/blockies.svg",
+		"url": "/tasks",
+		"description": "当前博客的研究任务面板，用来跟踪 Thesis、AI Research Studio 和博客同步的下一步。",
+		"tags": [
+			"Roadmap",
+			"任务推进"
+		],
+		"stars": 4
+	},
+	{
 		"name": "arXiv",
+		"logo": "/images/share/5c9a8b7deb717c5f.svg",
 		"url": "https://arxiv.org/",
-		"logo": "https://static.arxiv.org/static/browse/0.3.4/images/icons/favicon-32x32.png",
-		"description": "跟踪控制理论、优化、机器学习和系统工程预印本。",
+		"description": "跟踪控制理论、机器学习、安全控制和优化方向预印本。",
 		"tags": [
 			"论文",
 			"预印本"
 		],
-		"stars": 5
-	},
-	{
-		"name": "GitHub",
-		"url": "https://github.com/vergil710",
-		"logo": "https://github.githubassets.com/favicons/favicon.svg",
-		"description": "代码、博客和科研项目的版本管理入口。",
-		"tags": [
-			"代码",
-			"项目"
-		],
-		"stars": 5
+		"stars": 4
 	}
 ]

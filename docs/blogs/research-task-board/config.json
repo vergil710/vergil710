@@ -1,0 +1,14 @@
+{
+	"slug": "research-task-board",
+	"title": "任务清单：下一步只盯实验闭环和同步规则",
+	"tags": [
+		"任务清单",
+		"实验复现",
+		"GitHub"
+	],
+	"date": "2026-06-06T16:00",
+	"summary": "把 Thesis、AI Research Studio 和博客同步拆成可执行任务。",
+	"cover": "",
+	"hidden": false,
+	"category": "任务清单"
+}

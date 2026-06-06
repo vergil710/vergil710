@@ -1,158 +1,185 @@
 [
-  {
-    "slug": "knowledge-base-building",
-    "title": "个人知识库不是收藏夹，而是可检索的项目记忆",
-    "tags": [
-      "知识库",
-      "RAG",
-      "项目记忆"
-    ],
-    "date": "2026-06-04T11:00",
-    "summary": "整理 RAG、文档摘要、文献卡片和项目记忆的关系。",
-    "cover": "",
-    "hidden": false,
-    "category": "工具流"
-  },
-  {
-    "slug": "philosophy-seminar-method",
-    "title": "哲学讨论班：为什么要用多角色讨论",
-    "tags": [
-      "哲学",
-      "阅读",
-      "讨论"
-    ],
-    "date": "2026-06-04T10:00",
-    "summary": "把哲学学习从摘抄概念变成问题驱动的对话。",
-    "cover": "",
-    "hidden": false,
-    "category": "哲学讨论"
-  },
-  {
-    "slug": "code-reproduction-log",
-    "title": "实验复现日志应该记录什么",
-    "tags": [
-      "代码复现",
-      "实验记录",
-      "科研工作流"
-    ],
-    "date": "2026-06-04T09:00",
-    "summary": "把一次实验从“跑过”变成“以后还能复现”。",
-    "cover": "",
-    "hidden": false,
-    "category": "工程记录"
-  },
-  {
-    "slug": "experiment-design-for-control-paper",
-    "title": "控制类论文实验设计：指标、对比和消融",
-    "tags": [
-      "实验设计",
-      "仿真",
-      "论文写作"
-    ],
-    "date": "2026-06-03T10:00",
-    "summary": "从论文主张出发设计仿真实验，而不是先画图再解释。",
-    "cover": "",
-    "hidden": false,
-    "category": "论文写作"
-  },
-  {
-    "slug": "literature-map-method",
-    "title": "文献地图怎么做，才不是简单堆论文",
-    "tags": [
-      "文献综述",
-      "论文写作",
-      "研究空白"
-    ],
-    "date": "2026-06-03T09:00",
-    "summary": "整理文献地图、研究空白和创新点之间的关系。",
-    "cover": "",
-    "hidden": false,
-    "category": "论文写作"
-  },
-  {
-    "slug": "cbf-safety-filter-notes",
-    "title": "CBF 安全滤波：把安全约束放在控制输出之前",
-    "tags": [
-      "CBF",
-      "安全控制",
-      "Safe RL"
-    ],
-    "date": "2026-06-02T11:00",
-    "summary": "用直观方式理解 CBF safety filter 在列车控制中的位置。",
-    "cover": "",
-    "hidden": false,
-    "category": "控制理论"
-  },
-  {
-    "slug": "mpc-for-train-control",
-    "title": "MPC 用在列车控制里，真正难在哪里",
-    "tags": [
-      "MPC",
-      "优化控制",
-      "重载列车"
-    ],
-    "date": "2026-06-02T10:00",
-    "summary": "从预测模型、目标函数、约束和实时性角度理解 MPC。",
-    "cover": "",
-    "hidden": false,
-    "category": "控制理论"
-  },
-  {
-    "slug": "lyapunov-proof-checklist",
-    "title": "Lyapunov 稳定性证明应该检查什么",
-    "tags": [
-      "Lyapunov",
-      "稳定性",
-      "控制理论"
-    ],
-    "date": "2026-06-02T09:00",
-    "summary": "整理 Lyapunov 稳定性证明中最容易漏掉的几个检查点。",
-    "cover": "",
-    "hidden": false,
-    "category": "控制理论"
-  },
-  {
-    "slug": "ai-research-studio-workflow",
-    "title": "把 AI 用成研究工作室，而不是零散聊天",
-    "tags": [
-      "AI",
-      "科研工作流",
-      "个人知识库",
-      "写作"
-    ],
-    "date": "2026-06-01T09:00",
-    "summary": "关于 AI 辅助科研工作流的一点整理。",
-    "cover": "",
-    "hidden": false,
-    "category": "工具流"
-  },
-  {
-    "slug": "ato-energy-punctuality-notes",
-    "title": "ATO 节能准时速度曲线规划：问题拆解",
-    "tags": [
-      "ATO",
-      "节能优化",
-      "准时控制",
-      "重载列车"
-    ],
-    "date": "2026-06-01T09:00",
-    "summary": "把 ATO 速度曲线规划问题拆成目标、约束、实时性和工程指标。",
-    "cover": "",
-    "hidden": false,
-    "category": "研究札记"
-  },
-  {
-    "slug": "hello-research-blog",
-    "title": "这个博客准备记录什么",
-    "tags": [
-      "个人博客",
-      "研究记录",
-      "知识管理"
-    ],
-    "date": "2026-06-01T09:00",
-    "summary": "一个面向长期研究的个人博客开篇。",
-    "cover": "",
-    "hidden": false,
-    "category": "随笔"
-  }
+	{
+		"slug": "thesis-writing-factory",
+		"title": "论文写作工厂：Thesis 仓库同步说明",
+		"tags": [
+			"论文写作",
+			"Thesis",
+			"实验复现"
+		],
+		"date": "2026-06-06T16:20",
+		"summary": "六篇论文从正文交付转向实验复现和投稿整理的当前状态。",
+		"cover": "",
+		"hidden": false,
+		"category": "论文写作"
+	},
+	{
+		"slug": "ai-research-studio-system",
+		"title": "AI 人设工作室：从角色到 workflow",
+		"tags": [
+			"AI 人设",
+			"Workflow",
+			"Skills"
+		],
+		"date": "2026-06-06T16:10",
+		"summary": "AI Research Studio 里保存的角色卡、规则、技能和科研工作流。",
+		"cover": "",
+		"hidden": false,
+		"category": "AI 人设"
+	},
+	{
+		"slug": "research-task-board",
+		"title": "任务清单：下一步只盯实验闭环和同步规则",
+		"tags": [
+			"任务清单",
+			"实验复现",
+			"GitHub"
+		],
+		"date": "2026-06-06T16:00",
+		"summary": "把 Thesis、AI Research Studio 和博客同步拆成可执行任务。",
+		"cover": "",
+		"hidden": false,
+		"category": "任务清单"
+	},
+	{
+		"slug": "knowledge-base-building",
+		"title": "个人知识库不是收藏夹，而是可检索的项目记忆",
+		"tags": [
+			"知识库",
+			"RAG",
+			"项目记忆"
+		],
+		"date": "2026-06-04T11:00",
+		"summary": "整理 RAG、文档摘要、文献卡片和项目记忆的关系。",
+		"cover": "",
+		"hidden": false,
+		"category": "工具流"
+	},
+	{
+		"slug": "philosophy-seminar-method",
+		"title": "哲学讨论班：为什么要用多角色讨论",
+		"tags": [
+			"哲学",
+			"阅读",
+			"讨论"
+		],
+		"date": "2026-06-04T10:00",
+		"summary": "把哲学学习从摘抄概念变成问题驱动的对话。",
+		"cover": "",
+		"hidden": false,
+		"category": "哲学讨论"
+	},
+	{
+		"slug": "code-reproduction-log",
+		"title": "实验复现日志应该记录什么",
+		"tags": [
+			"代码复现",
+			"实验记录",
+			"科研工作流"
+		],
+		"date": "2026-06-04T09:00",
+		"summary": "把一次实验从“跑过”变成“以后还能复现”。",
+		"cover": "",
+		"hidden": false,
+		"category": "工程记录"
+	},
+	{
+		"slug": "experiment-design-for-control-paper",
+		"title": "控制类论文实验设计：指标、对比和消融",
+		"tags": [
+			"实验设计",
+			"仿真",
+			"论文写作"
+		],
+		"date": "2026-06-03T10:00",
+		"summary": "从论文主张出发设计仿真实验，而不是先画图再解释。",
+		"cover": "",
+		"hidden": false,
+		"category": "论文写作"
+	},
+	{
+		"slug": "literature-map-method",
+		"title": "文献地图怎么做，才不是简单堆论文",
+		"tags": [
+			"文献综述",
+			"论文写作",
+			"研究空白"
+		],
+		"date": "2026-06-03T09:00",
+		"summary": "整理文献地图、研究空白和创新点之间的关系。",
+		"cover": "",
+		"hidden": false,
+		"category": "论文写作"
+	},
+	{
+		"slug": "cbf-safety-filter-notes",
+		"title": "CBF 安全滤波：把安全约束放在控制输出之前",
+		"tags": [
+			"CBF",
+			"安全控制",
+			"Safe RL"
+		],
+		"date": "2026-06-02T11:00",
+		"summary": "用直观方式理解 CBF safety filter 在列车控制中的位置。",
+		"cover": "",
+		"hidden": false,
+		"category": "控制理论"
+	},
+	{
+		"slug": "mpc-for-train-control",
+		"title": "MPC 用在列车控制里，真正难在哪里",
+		"tags": [
+			"MPC",
+			"优化控制",
+			"重载列车"
+		],
+		"date": "2026-06-02T10:00",
+		"summary": "从预测模型、目标函数、约束和实时性角度理解 MPC。",
+		"cover": "",
+		"hidden": false,
+		"category": "控制理论"
+	},
+	{
+		"slug": "lyapunov-proof-checklist",
+		"title": "Lyapunov 稳定性证明应该检查什么",
+		"tags": [
+			"Lyapunov",
+			"稳定性",
+			"控制理论"
+		],
+		"date": "2026-06-02T09:00",
+		"summary": "整理 Lyapunov 稳定性证明中最容易漏掉的几个检查点。",
+		"cover": "",
+		"hidden": false,
+		"category": "控制理论"
+	},
+	{
+		"slug": "ai-research-studio-workflow",
+		"title": "把 AI 用成研究工作室，而不是零散聊天",
+		"tags": [
+			"AI",
+			"科研工作流",
+			"个人知识库",
+			"写作"
+		],
+		"date": "2026-06-01T09:00",
+		"summary": "关于 AI 辅助科研工作流的一点整理。",
+		"cover": "",
+		"hidden": false,
+		"category": "工具流"
+	},
+	{
+		"slug": "hello-research-blog",
+		"title": "这个博客准备记录什么",
+		"tags": [
+			"个人博客",
+			"研究记录",
+			"知识管理"
+		],
+		"date": "2026-06-01T09:00",
+		"summary": "一个面向长期研究的个人博客开篇。",
+		"cover": "",
+		"hidden": false,
+		"category": "随笔"
+	}
 ]

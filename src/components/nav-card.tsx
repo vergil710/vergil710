@@ -27,16 +27,22 @@ import { withBasePath } from '@/lib/paths'
 
 const list = [
 	{
+		icon: ProjectsOutlineSVG,
+		iconActive: ProjectsFilledSVG,
+		label: '研究模块',
+		href: '/projects'
+	},
+	{
+		icon: WebsiteOutlineSVG,
+		iconActive: WebsiteFilledSVG,
+		label: '任务清单',
+		href: '/tasks'
+	},
+	{
 		icon: ScrollOutlineSVG,
 		iconActive: ScrollFilledSVG,
 		label: '近期文章',
 		href: '/blog'
-	},
-	{
-		icon: ProjectsOutlineSVG,
-		iconActive: ProjectsFilledSVG,
-		label: '我的项目',
-		href: '/projects'
 	},
 	{
 		icon: AboutOutlineSVG,
@@ -47,14 +53,8 @@ const list = [
 	{
 		icon: ShareOutlineSVG,
 		iconActive: ShareFilledSVG,
-		label: '推荐分享',
+		label: '资源入口',
 		href: '/share'
-	},
-	{
-		icon: WebsiteOutlineSVG,
-		iconActive: WebsiteFilledSVG,
-		label: '优秀博客',
-		href: '/bloggers'
 	}
 ]
 
