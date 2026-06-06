@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel xmlns:atom="http://www.w3.org/2005/Atom">
+		<title>Vergil710</title>
+		<link>https://www.yysuni.com</link>
+		<atom:link href="https://www.yysuni.com/rss.xml" rel="self" type="application/rss+xml" />
+		<description>重载列车控制、智能优化、科研写作与个人知识管理。</description>
+		<language>zh-CN</language>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<ttl>60</ttl>
+		<lastBuildDate>Sat, 06 Jun 2026 07:55:26 GMT</lastBuildDate>
+		<item>
+			<title>个人知识库不是收藏夹，而是可检索的项目记忆</title>
+			<link>https://www.yysuni.com/blog/knowledge-base-building</link>
+			<guid isPermaLink="false">https://www.yysuni.com/blog/knowledge-base-building</guid>
+			<description><![CDATA[整理 RAG、文档摘要、文献卡片和项目记忆的关系。]]></description>
+			<pubDate>Thu, 04 Jun 2026 03:00:00 GMT</pubDate>
+			<category>知识库</category><category>RAG</category><category>项目记忆</category>
+			
+		</item><item>
+			<title>哲学讨论班：为什么要用多角色讨论</title>
+			<link>https://www.yysuni.com/blog/philosophy-seminar-method</link>
+			<guid isPermaLink="false">https://www.yysuni.com/blog/philosophy-seminar-method</guid>
+			<description><![CDATA[把哲学学习从摘抄概念变成问题驱动的对话。]]></description>
+			<pubDate>Thu, 04 Jun 2026 02:00:00 GMT</pubDate>
+			<category>哲学</category><category>阅读</category><category>讨论</category>
+			
+		</item><item>
+			<title>实验复现日志应该记录什么</title>
+			<link>https://www.yysuni.com/blog/code-reproduction-log</link>
+			<guid isPermaLink="false">https://www.yysuni.com/blog/code-reproduction-log</guid>
+			<description><![CDATA[把一次实验从“跑过”变成“以后还能复现”。]]></description>
+			<pubDate>Thu, 04 Jun 2026 01:00:00 GMT</pubDate>
+			<category>代码复现</category><category>实验记录</category><category>科研工作流</category>
+			
+		</item><item>
+			<title>控制类论文实验设计：指标、对比和消融</title>
+			<link>https://www.yysuni.com/blog/experiment-design-for-control-paper</link>
+			<guid isPermaLink="false">https://www.yysuni.com/blog/experiment-design-for-control-paper</guid>
+			<description><![CDATA[从论文主张出发设计仿真实验，而不是先画图再解释。]]></description>
+			<pubDate>Wed, 03 Jun 2026 02:00:00 GMT</pubDate>
+			<category>实验设计</category><category>仿真</category><category>论文写作</category>
+			
+		</item><item>
+			<title>文献地图怎么做，才不是简单堆论文</title>
+			<link>https://www.yysuni.com/blog/literature-map-method</link>
+			<guid isPermaLink="false">https://www.yysuni.com/blog/literature-map-method</guid>
+			<description><![CDATA[整理文献地图、研究空白和创新点之间的关系。]]></description>
+			<pubDate>Wed, 03 Jun 2026 01:00:00 GMT</pubDate>
+			<category>文献综述</category><category>论文写作</category><category>研究空白</category>
+			
+		</item><item>
+			<title>CBF 安全滤波：把安全约束放在控制输出之前</title>
+			<link>https://www.yysuni.com/blog/cbf-safety-filter-notes</link>
+			<guid isPermaLink="false">https://www.yysuni.com/blog/cbf-safety-filter-notes</guid>
+			<description><![CDATA[用直观方式理解 CBF safety filter 在列车控制中的位置。]]></description>
+			<pubDate>Tue, 02 Jun 2026 03:00:00 GMT</pubDate>
+			<category>CBF</category><category>安全控制</category><category>Safe RL</category>
+			
+		</item><item>
+			<title>MPC 用在列车控制里，真正难在哪里</title>
+			<link>https://www.yysuni.com/blog/mpc-for-train-control</link>
+			<guid isPermaLink="false">https://www.yysuni.com/blog/mpc-for-train-control</guid>
+			<description><![CDATA[从预测模型、目标函数、约束和实时性角度理解 MPC。]]></description>
+			<pubDate>Tue, 02 Jun 2026 02:00:00 GMT</pubDate>
+			<category>MPC</category><category>优化控制</category><category>重载列车</category>
+			
+		</item><item>
+			<title>Lyapunov 稳定性证明应该检查什么</title>
+			<link>https://www.yysuni.com/blog/lyapunov-proof-checklist</link>
+			<guid isPermaLink="false">https://www.yysuni.com/blog/lyapunov-proof-checklist</guid>
+			<description><![CDATA[整理 Lyapunov 稳定性证明中最容易漏掉的几个检查点。]]></description>
+			<pubDate>Tue, 02 Jun 2026 01:00:00 GMT</pubDate>
+			<category>Lyapunov</category><category>稳定性</category><category>控制理论</category>
+			
+		</item><item>
+			<title>把 AI 用成研究工作室，而不是零散聊天</title>
+			<link>https://www.yysuni.com/blog/ai-research-studio-workflow</link>
+			<guid isPermaLink="false">https://www.yysuni.com/blog/ai-research-studio-workflow</guid>
+			<description><![CDATA[关于 AI 辅助科研工作流的一点整理。]]></description>
+			<pubDate>Mon, 01 Jun 2026 01:00:00 GMT</pubDate>
+			<category>AI</category><category>科研工作流</category><category>个人知识库</category><category>写作</category>
+			
+		</item><item>
+			<title>ATO 节能准时速度曲线规划：问题拆解</title>
+			<link>https://www.yysuni.com/blog/ato-energy-punctuality-notes</link>
+			<guid isPermaLink="false">https://www.yysuni.com/blog/ato-energy-punctuality-notes</guid>
+			<description><![CDATA[把 ATO 速度曲线规划问题拆成目标、约束、实时性和工程指标。]]></description>
+			<pubDate>Mon, 01 Jun 2026 01:00:00 GMT</pubDate>
+			<category>ATO</category><category>节能优化</category><category>准时控制</category><category>重载列车</category>
+			
+		</item><item>
+			<title>这个博客准备记录什么</title>
+			<link>https://www.yysuni.com/blog/hello-research-blog</link>
+			<guid isPermaLink="false">https://www.yysuni.com/blog/hello-research-blog</guid>
+			<description><![CDATA[一个面向长期研究的个人博客开篇。]]></description>
+			<pubDate>Mon, 01 Jun 2026 01:00:00 GMT</pubDate>
+			<category>个人博客</category><category>研究记录</category><category>知识管理</category>
+			
+		</item>
+	</channel>
+</rss>

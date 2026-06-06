@@ -1,0 +1,36 @@
+[
+	{
+		"name": "AI Research Studio",
+		"url": "https://github.com/vergil710/AI_Research_Studio",
+		"logo": "https://github.githubassets.com/favicons/favicon.svg",
+		"description": "个人 AI 科研工作室仓库，承载文献阅读、论文写作、实验复现和项目记忆。",
+		"tags": [
+			"AI",
+			"科研",
+			"GitHub"
+		],
+		"stars": 5
+	},
+	{
+		"name": "arXiv",
+		"url": "https://arxiv.org/",
+		"logo": "https://static.arxiv.org/static/browse/0.3.4/images/icons/favicon-32x32.png",
+		"description": "跟踪控制理论、优化、机器学习和系统工程预印本。",
+		"tags": [
+			"论文",
+			"预印本"
+		],
+		"stars": 5
+	},
+	{
+		"name": "GitHub",
+		"url": "https://github.com/vergil710",
+		"logo": "https://github.githubassets.com/favicons/favicon.svg",
+		"description": "代码、博客和科研项目的版本管理入口。",
+		"tags": [
+			"代码",
+			"项目"
+		],
+		"stars": 5
+	}
+]

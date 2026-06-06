@@ -1,0 +1,13 @@
+{
+  "title": "CBF 安全滤波：把安全约束放在控制输出之前",
+  "tags": [
+    "CBF",
+    "安全控制",
+    "Safe RL"
+  ],
+  "date": "2026-06-02T11:00",
+  "summary": "用直观方式理解 CBF safety filter 在列车控制中的位置。",
+  "cover": "",
+  "hidden": false,
+  "category": "控制理论"
+}

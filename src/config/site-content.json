@@ -1,0 +1,72 @@
+{
+	"meta": {
+		"title": "Vergil710",
+		"description": "重载列车控制、智能优化、科研写作与个人知识管理。",
+		"username": "Vergil710"
+	},
+	"theme": {
+		"colorBrand": "#23b6c7",
+		"colorPrimary": "#263238",
+		"colorSecondary": "#5f6f73",
+		"colorBrandSecondary": "#f2c94c",
+		"colorBg": "#dceff2",
+		"colorBorder": "#ffffff",
+		"colorCard": "#ffffffa6",
+		"colorArticle": "#ffffffe0"
+	},
+	"backgroundColors": [
+		"#e6f7fb",
+		"#f7e7a9",
+		"#f9fbf6"
+	],
+	"artImages": [
+		{
+			"id": "cat",
+			"url": "/images/art/cat.png"
+		},
+		{
+			"id": "a46372ff45bc5524",
+			"url": "/images/art/a46372ff45bc5524.jpg"
+		},
+		{
+			"id": "1c7b726fe720679b",
+			"url": "/images/art/1c7b726fe720679b.jpg"
+		}
+	],
+	"currentArtImageId": "1c7b726fe720679b",
+	"backgroundImages": [
+		{
+			"id": "",
+			"url": ""
+		}
+	],
+	"currentBackgroundImageId": "",
+	"socialButtons": [
+		{
+			"id": "github",
+			"type": "github",
+			"value": "https://github.com/vergil710",
+			"label": "GitHub",
+			"order": 1
+		},
+		{
+			"id": "email",
+			"type": "email",
+			"value": "your-email@example.com",
+			"label": "",
+			"order": 2
+		}
+	],
+	"clockShowSeconds": false,
+	"summaryInContent": false,
+	"isCachePem": false,
+	"hideEditButton": false,
+	"enableCategories": true,
+	"currentHatIndex": 3,
+	"hatFlipped": false,
+	"enableChristmas": false,
+	"beian": {
+		"text": "",
+		"link": ""
+	}
+}

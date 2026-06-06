@@ -1,0 +1,13 @@
+{
+  "title": "Lyapunov 稳定性证明应该检查什么",
+  "tags": [
+    "Lyapunov",
+    "稳定性",
+    "控制理论"
+  ],
+  "date": "2026-06-02T09:00",
+  "summary": "整理 Lyapunov 稳定性证明中最容易漏掉的几个检查点。",
+  "cover": "",
+  "hidden": false,
+  "category": "控制理论"
+}

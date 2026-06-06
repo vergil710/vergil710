@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[95462,[],"ViewportBoundary"]
+4:I[95462,[],"MetadataBoundary"]
+5:"$Sreact.suspense"
+0:{"buildId":"ovrbZXKoecwVi_zOM7vkV","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],null]}],"loading":null,"isPartial":false}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+6:[["$","title","0",{"children":"Vergil710"}],["$","meta","1",{"name":"description","content":"重载列车控制、智能优化、科研写作与个人知识管理。"}],["$","meta","2",{"property":"og:title","content":"Vergil710"}],["$","meta","3",{"property":"og:description","content":"重载列车控制、智能优化、科研写作与个人知识管理。"}],["$","meta","4",{"name":"twitter:card","content":"summary"}],["$","meta","5",{"name":"twitter:title","content":"Vergil710"}],["$","meta","6",{"name":"twitter:description","content":"重载列车控制、智能优化、科研写作与个人知识管理。"}]]

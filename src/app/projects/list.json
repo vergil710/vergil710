@@ -1,0 +1,40 @@
+[
+	{
+		"name": "AI Research Studio",
+		"year": 2026,
+		"description": "把 AI 辅助科研整理成可复用工作室：多模型讨论、文献卡片、论文写作、代码复现与项目记忆。",
+		"image": "/images/project/03c08b1832f36f02.png",
+		"url": "https://github.com/vergil710/AI_Research_Studio",
+		"github": "https://github.com/vergil710/AI_Research_Studio",
+		"tags": [
+			"AI",
+			"科研工作流",
+			"知识库"
+		]
+	},
+	{
+		"name": "个人博客",
+		"year": 2026,
+		"description": "用于记录重载列车控制、优化方法、论文写作、代码复现和长期项目日志的个人站点。",
+		"image": "/images/avatar.png",
+		"url": "https://vergil710.github.io/vergil710/",
+		"github": "https://github.com/vergil710/vergil710",
+		"tags": [
+			"Blog",
+			"Next.js",
+			"GitHub Pages"
+		]
+	},
+	{
+		"name": "列车控制研究笔记",
+		"year": 2026,
+		"description": "围绕 ATO 准点停车、MPC、CBF、安全约束与稳定性证明整理的研究笔记集合。",
+		"image": "/images/blockies.svg",
+		"url": "/blog",
+		"tags": [
+			"控制理论",
+			"MPC",
+			"CBF"
+		]
+	}
+]
