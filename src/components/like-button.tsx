@@ -1,10 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
-import useSWR from 'swr'
 import { motion, AnimatePresence } from 'motion/react'
 import { Heart } from 'lucide-react'
 import clsx from 'clsx'
 import { cn } from '@/lib/utils'
-import { toast } from 'sonner'
 import { BLOG_SLUG_KEY } from '@/consts'
 
 type LikeButtonProps = {
@@ -13,13 +11,14 @@ type LikeButtonProps = {
 	delay?: number
 }
 
-const ENDPOINT = 'https://blog-liker.yysuni1001.workers.dev/api/like'
+const makeStorageKey = (slug: string) => `vergil710-like-count:${slug}`
 
 export default function LikeButton({ slug = 'yysuni', delay, className }: LikeButtonProps) {
 	slug = BLOG_SLUG_KEY + slug
 	const [liked, setLiked] = useState(false)
 	const [show, setShow] = useState(false)
 	const [justLiked, setJustLiked] = useState(false)
+	const [count, setCount] = useState<number | null>(null)
 	const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number }>>([])
 
 	useEffect(() => {
@@ -35,17 +34,12 @@ export default function LikeButton({ slug = 'yysuni', delay, className }: LikeBu
 		}
 	}, [justLiked])
 
-	const fetcher = useCallback(async (url: string): Promise<number | null> => {
-		const res = await fetch(url, { method: 'GET', cache: 'no-store' })
-		if (!res.ok) return null
-		const data = await res.json().catch(() => ({}))
-		return typeof data?.count === 'number' ? data.count : null
-	}, [])
-
-	const { data: fetchedCount, mutate } = useSWR(slug ? `${ENDPOINT}?slug=${encodeURIComponent(slug)}` : null, fetcher, {
-		revalidateOnFocus: false,
-		dedupingInterval: 1000 * 10
-	})
+	useEffect(() => {
+		if (!slug) return
+		const stored = window.localStorage.getItem(makeStorageKey(slug))
+		setCount(stored ? Number(stored) || 0 : 0)
+		setLiked(window.localStorage.getItem(`${makeStorageKey(slug)}:liked`) === 'true')
+	}, [slug])
 
 	const handleLike = useCallback(async () => {
 		if (!slug) return
@@ -63,19 +57,13 @@ export default function LikeButton({ slug = 'yysuni', delay, className }: LikeBu
 		// Clear particles after animation
 		setTimeout(() => setParticles([]), 1000)
 
-		try {
-			const url = `${ENDPOINT}?slug=${encodeURIComponent(slug)}`
-			const res = await fetch(url, { method: 'POST' })
-			const data = await res.json().catch(() => ({}))
-			if (data.reason == 'rate_limited') toast('谢谢啦😘，今天已经不能再点赞啦💕')
-			const value = typeof data?.count === 'number' ? data.count : (fetchedCount ?? 0) + 1
-			await mutate(value, { revalidate: false })
-		} catch {
-			// ignore
-		}
-	}, [slug, fetchedCount, mutate])
-
-	const count = typeof fetchedCount === 'number' ? fetchedCount : null
+		setCount(previous => {
+			const next = (previous ?? 0) + 1
+			window.localStorage.setItem(makeStorageKey(slug), String(next))
+			window.localStorage.setItem(`${makeStorageKey(slug)}:liked`, 'true')
+			return next
+		})
+	}, [slug])
 
 	if (show)
 		return (
