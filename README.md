@@ -32,6 +32,8 @@ public/blogs/your-post-slug/
 - 首页站点标题、颜色、社交链接：`src/config/site-content.json`
 - 首页卡片组件：`src/app/(home)/`
 
+任务清单页现在支持在网页里新增、勾选、修改和删除待办项。网页里的改动默认保存在当前浏览器的 `localStorage`；如果要变成所有设备都能看到的公开版本，需要把稳定后的任务同步进 `src/app/tasks/page.tsx` 后重新发布。
+
 ## 当前内容结构
 
 - 论文写作工厂：同步 `vergil710/Thesis`，主要记录六篇论文的正文链、评审修订、双语增强和实验复现路线图。
