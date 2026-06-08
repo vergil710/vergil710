@@ -18,6 +18,7 @@ interface TodoItem {
 const storageKey = 'vergil710-research-todos-v2'
 const legacyStorageKey = 'vergil710-research-todos-v1'
 const priorities: TodoPriority[] = ['高', '中', '低']
+const panelClass = 'rounded-lg border bg-white/70 p-5 shadow-sm backdrop-blur'
 
 const defaultTodos: TodoItem[] = [
 	{
@@ -198,7 +199,7 @@ export default function TasksPage() {
 					<div className='bg-brand h-full rounded-full transition-all' style={{ width: `${stats.ratio}%` }} />
 				</div>
 
-				<section className='card mb-6 rounded-lg'>
+				<section className={`${panelClass} mb-6`}>
 					<div className='grid grid-cols-[minmax(0,1fr)_220px_96px_44px] gap-3 max-lg:grid-cols-[minmax(0,1fr)_180px_96px_44px] max-md:grid-cols-1'>
 						<input
 							value={title}
@@ -248,7 +249,7 @@ export default function TasksPage() {
 
 				<div className='space-y-3'>
 					{visibleTodos.map(todo => (
-						<article key={todo.id} className='card flex flex-col gap-3 rounded-lg'>
+						<article key={todo.id} className={`${panelClass} flex flex-col gap-3`}>
 							<div className='grid grid-cols-[34px_minmax(0,1fr)_40px] items-start gap-3'>
 								<button
 									onClick={() => updateTodo(todo.id, { done: !todo.done })}
@@ -297,14 +298,14 @@ export default function TasksPage() {
 					))}
 				</div>
 
-				{visibleTodos.length === 0 && <div className='card text-secondary rounded-lg text-center text-sm'>这个标签下还没有待办。</div>}
+				{visibleTodos.length === 0 && <div className={`${panelClass} text-secondary text-center text-sm`}>这个标签下还没有待办。</div>}
 
 				<section className='mt-6 grid grid-cols-[1.2fr_0.8fr] gap-5 max-lg:grid-cols-1'>
-					<div className='card rounded-lg'>
+					<div className={panelClass}>
 						<h2 className='text-primary mb-3 text-lg font-semibold'>同步边界</h2>
 						<p className='text-secondary text-sm leading-7'>这里的交互编辑先保存在浏览器本地。需要公开到 GitHub Pages 时，再把稳定后的任务同步进仓库文件并发布。</p>
 					</div>
-					<div className='card rounded-lg'>
+					<div className={panelClass}>
 						<h2 className='text-primary mb-3 text-lg font-semibold'>研究边界</h2>
 						<div className='text-secondary space-y-2 text-sm leading-6'>
 							<p>不把代表性仿真写成真实可复现实验。</p>
