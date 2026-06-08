@@ -3,29 +3,27 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Check, Clipboard, Plus, RotateCcw, Trash2 } from 'lucide-react'
 
-type TodoModule = '论文写作' | 'AI 人设' | '博客'
 type TodoPriority = '高' | '中' | '低'
-type TodoFilter = '全部' | TodoModule
+type TagFilter = '全部' | string
 
 interface TodoItem {
 	id: string
 	title: string
-	module: TodoModule
+	tags: string[]
 	priority: TodoPriority
 	done: boolean
 	note?: string
 }
 
-const storageKey = 'vergil710-research-todos-v1'
-const modules: TodoModule[] = ['论文写作', 'AI 人设', '博客']
+const storageKey = 'vergil710-research-todos-v2'
+const legacyStorageKey = 'vergil710-research-todos-v1'
 const priorities: TodoPriority[] = ['高', '中', '低']
-const filters: TodoFilter[] = ['全部', ...modules]
 
 const defaultTodos: TodoItem[] = [
 	{
 		id: 'paper04-reproducible-loop',
 		title: '补齐 paper04 的真实可复现实验闭环',
-		module: '论文写作',
+		tags: ['论文', 'paper04', '实验复现'],
 		priority: '高',
 		done: false,
 		note: 'simulation_code、configs、raw_results、figures_src、experiment_logs'
@@ -33,52 +31,76 @@ const defaultTodos: TodoItem[] = [
 	{
 		id: 'paper05-paper06-experiments',
 		title: '推进 paper05 与 paper06 的代码、配置、原始结果和绘图脚本',
-		module: '论文写作',
+		tags: ['论文', 'paper05', 'paper06', '实验复现'],
 		priority: '高',
 		done: false
 	},
 	{
 		id: 'submission-formatting',
 		title: '整理参考文献、期刊模板、图源、表源和实验日志',
-		module: '论文写作',
+		tags: ['论文', '投稿整理'],
 		priority: '中',
 		done: false
 	},
 	{
 		id: 'openclaw-rules',
 		title: '把 OpenClaw 工作区规则正式接入 AI Research Studio',
-		module: 'AI 人设',
+		tags: ['AI 人设', 'OpenClaw'],
 		priority: '中',
 		done: false
 	},
 	{
 		id: 'thesis-prompts',
 		title: '从 Thesis paper01 至 paper06 抽象可复用 prompt',
-		module: 'AI 人设',
+		tags: ['AI 人设', 'prompt', 'Thesis'],
 		priority: '中',
 		done: false
 	},
 	{
 		id: 'real-profile',
 		title: '替换博客真实头像、邮箱和个人介绍细节',
-		module: '博客',
+		tags: ['博客', '个人资料'],
 		priority: '低',
 		done: false
 	},
 	{
 		id: 'sync-blog-after-github',
 		title: 'GitHub 仓库更新后，同步调整 list.json、文章和任务页',
-		module: '博客',
+		tags: ['博客', 'GitHub 同步'],
 		priority: '中',
 		done: false
 	}
 ]
 
-function createTodo(title: string, module: TodoModule, priority: TodoPriority): TodoItem {
+function splitTags(value: string): string[] {
+	return Array.from(
+		new Set(
+			value
+				.split(/[,，、]/)
+				.map(tag => tag.trim())
+				.filter(Boolean)
+		)
+	)
+}
+
+function normalizeTodo(item: any): TodoItem {
+	const fallbackTags = typeof item?.module === 'string' ? [item.module] : ['未分类']
+
+	return {
+		id: typeof item?.id === 'string' ? item.id : `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+		title: typeof item?.title === 'string' ? item.title : '未命名待办',
+		tags: Array.isArray(item?.tags) && item.tags.length ? item.tags.filter((tag: unknown) => typeof tag === 'string' && tag.trim()) : fallbackTags,
+		priority: priorities.includes(item?.priority) ? item.priority : '中',
+		done: Boolean(item?.done),
+		note: typeof item?.note === 'string' ? item.note : undefined
+	}
+}
+
+function createTodo(title: string, tags: string[], priority: TodoPriority): TodoItem {
 	return {
 		id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
 		title,
-		module,
+		tags: tags.length ? tags : ['未分类'],
 		priority,
 		done: false
 	}
@@ -86,19 +108,19 @@ function createTodo(title: string, module: TodoModule, priority: TodoPriority): 
 
 export default function TasksPage() {
 	const [todos, setTodos] = useState<TodoItem[]>(defaultTodos)
-	const [filter, setFilter] = useState<TodoFilter>('全部')
+	const [filter, setFilter] = useState<TagFilter>('全部')
 	const [title, setTitle] = useState('')
-	const [module, setModule] = useState<TodoModule>('论文写作')
+	const [tagInput, setTagInput] = useState('论文')
 	const [priority, setPriority] = useState<TodoPriority>('中')
 	const [copied, setCopied] = useState(false)
 	const [hydrated, setHydrated] = useState(false)
 
 	useEffect(() => {
-		const saved = window.localStorage.getItem(storageKey)
+		const saved = window.localStorage.getItem(storageKey) || window.localStorage.getItem(legacyStorageKey)
 		if (saved) {
 			try {
 				const parsed = JSON.parse(saved)
-				if (Array.isArray(parsed)) setTodos(parsed)
+				if (Array.isArray(parsed)) setTodos(parsed.map(normalizeTodo))
 			} catch {
 				setTodos(defaultTodos)
 			}
@@ -110,8 +132,12 @@ export default function TasksPage() {
 		if (hydrated) window.localStorage.setItem(storageKey, JSON.stringify(todos))
 	}, [todos, hydrated])
 
+	const allTags = useMemo(() => {
+		return Array.from(new Set(todos.flatMap(todo => todo.tags))).sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'))
+	}, [todos])
+
 	const visibleTodos = useMemo(() => {
-		return todos.filter(todo => filter === '全部' || todo.module === filter)
+		return todos.filter(todo => filter === '全部' || todo.tags.includes(filter))
 	}, [todos, filter])
 
 	const stats = useMemo(() => {
@@ -126,7 +152,7 @@ export default function TasksPage() {
 	const addTodo = () => {
 		const trimmed = title.trim()
 		if (!trimmed) return
-		setTodos(prev => [createTodo(trimmed, module, priority), ...prev])
+		setTodos(prev => [createTodo(trimmed, splitTags(tagInput), priority), ...prev])
 		setTitle('')
 	}
 
@@ -139,7 +165,10 @@ export default function TasksPage() {
 	}
 
 	const resetTodos = () => {
-		if (confirm('恢复默认任务清单？')) setTodos(defaultTodos)
+		if (confirm('恢复默认任务清单？')) {
+			setTodos(defaultTodos)
+			setFilter('全部')
+		}
 	}
 
 	const copyTodos = async () => {
@@ -155,7 +184,7 @@ export default function TasksPage() {
 					<div>
 						<p className='text-brand mb-2 text-sm font-semibold'>Research Todo List</p>
 						<h1 className='text-primary text-4xl leading-tight font-semibold max-sm:text-3xl'>待办清单</h1>
-						<p className='text-secondary mt-3 max-w-3xl text-sm leading-7'>论文写作、AI 人设和博客同步的任务集中放在这里。当前改动会保存在这个浏览器。</p>
+						<p className='text-secondary mt-3 max-w-3xl text-sm leading-7'>每条待办都可以自己加标签，标签会自动成为筛选条件。当前改动会保存在这个浏览器。</p>
 					</div>
 					<div className='rounded-lg border bg-white/70 px-4 py-3 backdrop-blur'>
 						<div className='text-primary text-2xl font-semibold'>{stats.ratio}%</div>
@@ -170,7 +199,7 @@ export default function TasksPage() {
 				</div>
 
 				<section className='card mb-6 rounded-lg'>
-					<div className='grid grid-cols-[1fr_132px_96px_44px] gap-3 max-md:grid-cols-1'>
+					<div className='grid grid-cols-[minmax(0,1fr)_220px_96px_44px] gap-3 max-lg:grid-cols-[minmax(0,1fr)_180px_96px_44px] max-md:grid-cols-1'>
 						<input
 							value={title}
 							onChange={event => setTitle(event.target.value)}
@@ -178,15 +207,9 @@ export default function TasksPage() {
 								if (event.key === 'Enter') addTodo()
 							}}
 							placeholder='新增一个待办事项'
-							className='rounded-lg border bg-white/75 px-4 py-3 text-sm outline-none transition-colors focus:border-brand'
+							className='min-w-0 rounded-lg border bg-white/75 px-4 py-3 text-sm outline-none transition-colors focus:border-brand'
 						/>
-						<select value={module} onChange={event => setModule(event.target.value as TodoModule)} className='rounded-lg border bg-white/75 px-3 py-3 text-sm outline-none focus:border-brand'>
-							{modules.map(item => (
-								<option key={item} value={item}>
-									{item}
-								</option>
-							))}
-						</select>
+						<input value={tagInput} onChange={event => setTagInput(event.target.value)} placeholder='标签，用逗号分隔' className='min-w-0 rounded-lg border bg-white/75 px-4 py-3 text-sm outline-none transition-colors focus:border-brand' />
 						<select value={priority} onChange={event => setPriority(event.target.value as TodoPriority)} className='rounded-lg border bg-white/75 px-3 py-3 text-sm outline-none focus:border-brand'>
 							{priorities.map(item => (
 								<option key={item} value={item}>
@@ -202,7 +225,7 @@ export default function TasksPage() {
 
 				<div className='mb-5 flex flex-wrap items-center justify-between gap-3'>
 					<div className='flex flex-wrap gap-2'>
-						{filters.map(item => (
+						{(['全部', ...allTags] as TagFilter[]).map(item => (
 							<button
 								key={item}
 								onClick={() => setFilter(item)}
@@ -225,60 +248,61 @@ export default function TasksPage() {
 
 				<div className='space-y-3'>
 					{visibleTodos.map(todo => (
-						<article key={todo.id} className='card grid grid-cols-[34px_1fr_124px_90px_40px] items-center gap-3 rounded-lg max-md:grid-cols-[34px_1fr_40px]'>
-							<button
-								onClick={() => updateTodo(todo.id, { done: !todo.done })}
-								aria-label={todo.done ? '标记未完成' : '标记完成'}
-								className={`flex h-7 w-7 items-center justify-center rounded-lg border transition-colors ${todo.done ? 'bg-brand border-brand text-white' : 'bg-white/70'}`}>
-								{todo.done && <Check className='h-4 w-4' />}
-							</button>
+						<article key={todo.id} className='card flex flex-col gap-3 rounded-lg'>
+							<div className='grid grid-cols-[34px_minmax(0,1fr)_40px] items-start gap-3'>
+								<button
+									onClick={() => updateTodo(todo.id, { done: !todo.done })}
+									aria-label={todo.done ? '标记未完成' : '标记完成'}
+									className={`mt-1 flex h-7 w-7 items-center justify-center rounded-lg border transition-colors ${todo.done ? 'bg-brand border-brand text-white' : 'bg-white/70'}`}>
+									{todo.done && <Check className='h-4 w-4' />}
+								</button>
 
-							<div className='space-y-2'>
-								<input
-									value={todo.title}
-									onChange={event => updateTodo(todo.id, { title: event.target.value })}
-									className={`w-full rounded-lg bg-transparent px-1 py-1 text-sm leading-6 outline-none focus:bg-white/70 ${todo.done ? 'text-secondary line-through' : 'text-primary'}`}
-								/>
-								{todo.note && <p className='text-secondary px-1 text-xs leading-5'>{todo.note}</p>}
+								<div className='min-w-0 space-y-2'>
+									<input
+										value={todo.title}
+										onChange={event => updateTodo(todo.id, { title: event.target.value })}
+										className={`w-full min-w-0 rounded-lg bg-transparent px-1 py-1 text-sm leading-6 outline-none focus:bg-white/70 ${todo.done ? 'text-secondary line-through' : 'text-primary'}`}
+									/>
+									{todo.note && <p className='text-secondary px-1 text-xs leading-5'>{todo.note}</p>}
+								</div>
+
+								<button onClick={() => removeTodo(todo.id)} aria-label='删除待办' className='hover:bg-bg flex h-9 w-9 items-center justify-center rounded-lg border bg-white/70 transition-colors'>
+									<Trash2 className='h-4 w-4' />
+								</button>
 							</div>
 
-							<select
-								value={todo.module}
-								onChange={event => updateTodo(todo.id, { module: event.target.value as TodoModule })}
-								className='rounded-lg border bg-white/70 px-3 py-2 text-sm outline-none focus:border-brand max-md:hidden'>
-								{modules.map(item => (
-									<option key={item} value={item}>
-										{item}
-									</option>
-								))}
-							</select>
-
-							<select
-								value={todo.priority}
-								onChange={event => updateTodo(todo.id, { priority: event.target.value as TodoPriority })}
-								className='rounded-lg border bg-white/70 px-3 py-2 text-sm outline-none focus:border-brand max-md:hidden'>
-								{priorities.map(item => (
-									<option key={item} value={item}>
-										{item}
-									</option>
-								))}
-							</select>
-
-							<button onClick={() => removeTodo(todo.id)} aria-label='删除待办' className='hover:bg-bg flex h-9 w-9 items-center justify-center rounded-lg border bg-white/70 transition-colors'>
-								<Trash2 className='h-4 w-4' />
-							</button>
+							<div className='ml-[46px] flex flex-wrap items-center gap-2 max-sm:ml-0'>
+								<input
+									value={todo.tags.join('，')}
+									onChange={event => updateTodo(todo.id, { tags: splitTags(event.target.value) })}
+									placeholder='标签，用逗号分隔'
+									className='min-h-10 min-w-[220px] flex-1 rounded-lg border bg-white/70 px-3 py-2 text-sm outline-none focus:border-brand max-sm:min-w-full'
+								/>
+								<select value={todo.priority} onChange={event => updateTodo(todo.id, { priority: event.target.value as TodoPriority })} className='h-10 rounded-lg border bg-white/70 px-3 text-sm outline-none focus:border-brand'>
+									{priorities.map(item => (
+										<option key={item} value={item}>
+											{item}
+										</option>
+									))}
+								</select>
+								<div className='flex flex-wrap gap-1.5'>
+									{todo.tags.map(tag => (
+										<button key={tag} onClick={() => setFilter(tag)} className='bg-secondary/10 text-secondary rounded-lg px-2.5 py-1 text-xs hover:bg-white/80'>
+											{tag}
+										</button>
+									))}
+								</div>
+							</div>
 						</article>
 					))}
 				</div>
 
-				{visibleTodos.length === 0 && <div className='card text-secondary rounded-lg text-center text-sm'>这个分类下还没有待办。</div>}
+				{visibleTodos.length === 0 && <div className='card text-secondary rounded-lg text-center text-sm'>这个标签下还没有待办。</div>}
 
 				<section className='mt-6 grid grid-cols-[1.2fr_0.8fr] gap-5 max-lg:grid-cols-1'>
 					<div className='card rounded-lg'>
 						<h2 className='text-primary mb-3 text-lg font-semibold'>同步边界</h2>
-						<p className='text-secondary text-sm leading-7'>
-							这里的交互编辑先保存在浏览器本地。需要公开到 GitHub Pages 时，再把稳定后的任务同步进仓库文件并发布。
-						</p>
+						<p className='text-secondary text-sm leading-7'>这里的交互编辑先保存在浏览器本地。需要公开到 GitHub Pages 时，再把稳定后的任务同步进仓库文件并发布。</p>
 					</div>
 					<div className='card rounded-lg'>
 						<h2 className='text-primary mb-3 text-lg font-semibold'>研究边界</h2>

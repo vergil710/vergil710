@@ -1,3 +1,3 @@
-:HL["/vergil710/_next/static/css/8b879c10aaa9e0bf.css","style"]
+:HL["/vergil710/_next/static/css/2baab04177c2911c.css","style"]
 :HL["https://fonts.googleapis.cn/css2?family=Averia+Gruesa+Libre&display=swap","style"]
-0:{"buildId":"wJsDLs2P9L4onoc-1A-1-","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"blog","paramType":null,"paramKey":"blog","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"b_cbaj-oacgd3MR7Ita5E","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"blog","paramType":null,"paramKey":"blog","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
