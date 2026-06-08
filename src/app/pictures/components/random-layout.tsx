@@ -7,6 +7,7 @@ import { Picture } from '../page'
 import siteContent from '@/config/site-content.json'
 import { cn } from '@/lib/utils'
 import { useSize } from '@/hooks/use-size'
+import { withBasePath } from '@/lib/paths'
 
 interface RandomLayoutProps {
 	pictures: Picture[]
@@ -291,7 +292,7 @@ const FloatingImage = ({
 					!isEditMode && !isZoomed && 'hover:scale-105'
 				)}>
 				<motion.img
-					src={url}
+					src={withBasePath(url)}
 					onLoad={event => {
 						const img = event.currentTarget
 						setOriginalSize({ width: img.naturalWidth, height: img.naturalHeight })

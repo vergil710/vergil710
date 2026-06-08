@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react'
 import { toast } from 'sonner'
 import { hashFileSHA256 } from '@/lib/file-utils'
+import { withBasePath } from '@/lib/paths'
 import type { SiteContent } from '../../stores/config-store'
 import type { BackgroundImageUploads, FileItem } from './types'
 
@@ -131,7 +132,7 @@ export function BackgroundImagesSection({ formData, setFormData, backgroundImage
 					.map(item => {
 						const isActive = formData.currentBackgroundImageId === item.id
 						const uploadItem = backgroundImageUploads[item.id]
-						const src = uploadItem?.type === 'file' ? uploadItem.previewUrl : item.url
+						const src = uploadItem?.type === 'file' ? uploadItem.previewUrl : withBasePath(item.url)
 
 						return (
 							<div key={item.id} className='group relative'>
