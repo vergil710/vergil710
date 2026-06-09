@@ -1,3 +1,3 @@
 :HL["/vergil710/_next/static/css/01e32c0b965599f4.css","style"]
 :HL["https://fonts.googleapis.cn/css2?family=Averia+Gruesa+Libre&display=swap","style"]
-0:{"buildId":"VKgNg4zijG2FR3uaZ0lCh","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"write","paramType":null,"paramKey":"write","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"ZDRUrq7K79kGPLXnAtGZp","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"write","paramType":null,"paramKey":"write","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
