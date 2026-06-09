@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { withBasePath } from '@/lib/paths'
 
 /** PIXI Application 实例（CDN 加载，无类型包） */
 interface PixiAppInstance {
@@ -53,6 +54,8 @@ export default function Live2DViewer() {
 
 		const init = async () => {
 			try {
+				container.innerHTML = ''
+
 				for (const src of CDN_SCRIPTS) {
 					await loadScript(src)
 				}
@@ -88,7 +91,7 @@ export default function Live2DViewer() {
 					backgroundAlpha: 0
 				})
 
-				const model = await Live2DModel.from(MODEL_URL)
+				const model = await Live2DModel.from(withBasePath(MODEL_URL)!)
 				app.stage.addChild(model)
 
 				model.anchor.set(0.5, 0.5)
@@ -98,7 +101,8 @@ export default function Live2DViewer() {
 
 				setStatus('ready')
 			} catch (err) {
-				setErrorMsg(err instanceof Error ? err.message : String(err))
+				const message = err instanceof Error ? err.message : String(err)
+				setErrorMsg(message.includes('Failed to load script') ? 'Live2D 运行库加载失败，请检查网络或稍后刷新页面。' : message)
 				setStatus('error')
 			}
 		}
